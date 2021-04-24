@@ -1,22 +1,27 @@
-# Introduccion
+﻿# Introduccion
+
+Una empresa organizadora de eventos desea diseñar una base de datos para gestionar los festivales anuales pertenecientes al Quevedo Fest.
 
 1. Definicion de principales tablas que contiene el proyecto
-* Un cartel alberga a muchos artistas. El cartel cuenta con un id, una fecha, lugar y hora
-* Un artista tiene genero, edad , nombre , caché. Cada artista tiene su camerino y su backstage, además del escenario en el cual tocan.
-* El backstage contiene un tamaño, numero de mesas, nivel de servicio, numero de botellas. Varias empresas de catering pueden servir a varios backstages, y varios backstages son servidos por varias empresas
-* El catering contiene un nombre, tipo de comida, categoria de servicio
-* Un cartel cuenta con una web en el que sale toda su informacion. Esta web tiene una URL, numero de paginas , tecnologia principal usada e idioma
-* Varias entradas pueden ser para un mismo cartel, mientras que el cartel cuenta con un tipo de entradas. Estas entradas tiene un tamaño y un formato
-* Varios artistas tocan en varios escenarios, y un artista puede tocar en varios escenarios.
-2. Principales tablas que se refieren al equipo del escenario
-* Un escenario puede tener varias empresas de seguridad, y una empresa de seguridad puede estar presente en un escenario. La misma regla se aplica a backstage. La seguridad tiene un nombre y un numero de empleados
-* La actuacion del escenario se graba por varias empresas para su posterior retransmision. Un escenario puede ser grabado por varias empresas, y una empresa puede grabar varios escenarios. La grabacion tiene un numero de camaras, localizacion
-* Una retransmision es producida por varias grabaciones, y una grabacion puede ser usada para diferentes canales. Retransmision tiene canal, duracion e idioma
-* Una empresa de sonido puede estar presente en varios escenarios y viceversa. Esta cuenta con numero de trabajadores, tipo de sonido
-* Una empresa de iluminacion puede estar presente en varios escenarios y viceversa. Esta cuenta con numero de trabajadores, tipo de luz , numero de focos
-3. El artista cuenta con patrocinadores y merchandising. Se contempla el hecho de que el festival se queda con el dinero que esto produzca
-* Un artista puede tener varios patrocinadores, y un patrocinador puede trabajar con varios artistas. Patrocinador tiene sector, tipo de contrato y duracion
-* Un artista cuenta con su propio merchandising que esta dirigido por varias empresa, mientras que estas mismas empresa pueden trabajar con varios artistas. El merchandising tiene un formato, un canal y tipo de producto
 
-## Hay que tener en cuenta que habrá dos tablas principales llamadas ingresos y gastos que estarán relacionadas con el resto de las tablas mediante claves foraneas. La relacion será de 1,1 a 1,n, siendo cada tabla un solo canal de gastos o ingresos.
+* El cartel del festival contiene la fecha de inicio del festival, fecha finalizacion, lugar donde se celebra, presupuesto. 
+* Para un cartel de un año, se cuenta con varios artistas que tienen un genero musical, edad , nombre, precioy caché. Un mismo artista puede estar presente en carteles de varios años. 
+* El artista cuenta con un backstage durante su actuacion, y un mismo artista puede alojarse en varios durante la duración del festival. Cuenta con un gasto, numero de mesas, y tamaño.
+* El escenario alberga la actuación de los artistas, que a su vez tocan en varios escenarios durante el festival. Cuenta con una extension, un tipo(principal,secundario,techado, etc) y genera un gasto.
+
+2. Principales tablas que se refieren a empresas contratadas por el festival
+
+* El festival cuenta con varias empresas contratadas que tienen un nombre, precio, numero de trabajadores empleado en festival, director, telefono y direccion.
+* Estas empresas pueden ser de webs que promocionan el carteñ y contienen canales de promocion como fb,twitter e instagram. Seguridad que supervisan el escenarios y su correspondiente backstage. 
+* Grabacion que retransmite lo que pasa en el escenario mediante camaras situadas en diferentes puntos. 
+* Una empresa de sonido que captan a traves de microfonos
+* Una empresa de iluminacion que se encarga de la iluminacion de los escenarios mediante focos, y finalmente una empresa de catering que sirven a backstages cierto tipo de comida.
+* Cada empresa de grabacion y sonido, puede hacer varias retransmisiones que tienen cierta duracion, a traves de varios canales en distintos idiomas y lugares del mundo. Esto genera ingresos. Una retransmision en especifico, es realizada por una empresa. 
+
+3. El artista cuenta con patrocinadores y merchandising. Se contempla el hecho de que el festival se queda con el dinero que esto produzca
+
+* Un artista puede tener varios patrocinadores, y un patrocinador puede trabajar con varios artistas. Patrocinador tiene un nombre, sector, tipo de contrato,duracion y genera unos ingresos.
+* El artista tambien cuenta con su propio merchandising que tiene una categoria, gama e ingresos.
+
+* La web anuncia el cartel del festival cada año. Mediante la web se venden las entradas que tienen un precio, un formato, una fecha de compra, un plazo de devolucion y una categoria.
  
