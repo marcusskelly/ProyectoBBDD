@@ -11,7 +11,7 @@ Una empresa organizadora de eventos desea diseñar una base de datos para gestio
 
 2. Principales tablas que se refieren a empresas contratadas por el festival
 
-* El festival cuenta con varias empresas contratadas que tienen un nombre, precio, numero de trabajadores empleado en festival, director, telefono y direccion.
+* Junto con el cartel del festival, se menciona a varias empresas contratadas que tienen un nombre, precio, numero de trabajadores empleado en festival, director, telefono y direccion.
 * Estas empresas pueden ser de webs que promocionan el carteñ y contienen canales de promocion como fb,twitter e instagram. Seguridad que supervisan el escenarios y su correspondiente backstage. 
 * Grabacion que retransmite lo que pasa en el escenario mediante camaras situadas en diferentes puntos. 
 * Una empresa de sonido que captan a traves de microfonos
