@@ -1,8 +1,8 @@
-﻿# QuevedoFest
+﻿# Cada año se celebra un festival llamado QuevedoFest, el cual precisa de una base de datos que albregue información sobre el mismo, y así poder consultar diferencias en la organizacion de cada año.
 
 ## Principales objetivos del proyecto incluyen:
 
-1. Gestion de festivales celebrados anualmente
+1. Gestion de actuaciones del festival
 
 * Se pretende gestionar tanto la actuacion de artistas en festivales, asi como la participacion de varias empresas encargadas de multiples funciones durante los festivales celebrados.
  
