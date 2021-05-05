@@ -1,4 +1,4 @@
-# Principales tablas
+# Tablas de QuevedoFest
 
 * Cartel(cartel_id PK, fechaInicio,fechaFin,ubicacion,presupuesto,titulo
 * Artista(Artista_id PK,genero,edad,nombre,precio,cache

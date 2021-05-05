@@ -20,3 +20,4 @@
 * La actuacion del escenario en formato video, corre a cargo de varias empresas de grabacion, que pueden estar presentes en varios escenarios durante el festival, mientras que la grabacion de sonido es realizada por empresas de sonido que pueden estar presenter en varios escenarios durante el festival. Finalmente, la iluminacion de cada escenario la llevan a cargo varias empresas de iluminacion, que a la vez pueden estar presentes en otros escenarios durante el festival. La iluminacion del escenario cuenta con un numero de focos, y una localizacion de los focos. Del mismo modo, la empresas de grabacion y sonido cuentan con un numero de camaras y micros, situados en ciertas zonas del escenario.
 
 
+* Las empresas de grabacion y sonido, pueden emitir varias retransmisiones de lo que ocurre en el escenario. Por otro lado, una retransmision en especifico es emitida por una sola empresa y cuenta con un canal, un idioma, duracion,ingreso,tipo
