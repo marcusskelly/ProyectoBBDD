@@ -1,6 +1,6 @@
-#Modelo Fisico QuevedoFest 
+# Modelo Fisico QuevedoFest 
 
-##En este modelo se incluyen las tablas pertenecientes a QuevedoFest para su posterior creacion en la base de datos 'QuevedoFest'
+## En este modelo se incluyen las tablas pertenecientes a QuevedoFest para su posterior creacion en la base de datos 'QuevedoFest'
 
 Tabla 'cartel'
 
