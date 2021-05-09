@@ -11,7 +11,7 @@
 * Grabacion(Empresa_id FK
 * Sonido(Empresa_id FK
 * Iluminacion(Empresa_id FK
-* Retransmision(Retransmision_id PK, canal, duracion, idioma, ingreso,tipo,Grabacion_id FK,Sonido_id FK
+* Retransmision(Retransmision_id PK, canal, duracion, idioma, ingreso,tipo,empresa_id FK,empresa_id FK
 * Merchandising(Merchandising_id, producto, gama, ingresos,talla, artista_id FK
 * Patrocinador(Patrocinador_id PK, nombre, sector, direccion,telefono
 * Artista_Escenario(Artista_id_FK,Escenario_id FK,duracion_actuacion
