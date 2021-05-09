@@ -1,8 +1,8 @@
 # Modelo Fisico QuevedoFest 
 
-## En este modelo se incluyen las tablas pertenecientes a QuevedoFest para su posterior creacion en la base de datos 'QuevedoFest'
+## En este modelo se incluyen las tablas pertenecientes a QuevedoFest para su posterior creacion en la base de datos `QuevedoFest`
 
-Tabla 'cartel'
+Tabla `cartel`
 
     CREATE TABLE cartel(
     cartel_id NUMERIC(6) NOT NULL CONSTRAINT cartel_id_pk PRIMARY KEY(cartel_id) ,
@@ -13,7 +13,7 @@ Tabla 'cartel'
     titulo VARCHAR(30) NOT NULL
     );
 
-Tabla 'artista'
+Tabla `artista`
 
     CREATE TABLE artista(
     artista_id NUMERIC(6) NOT NULL CONSTRAINT artista_id_pk PRIMARY KEY(artista_id),
@@ -26,7 +26,7 @@ Tabla 'artista'
     CONSTRAINT artista_cache_ck CHECK (cache IN ('bajo','medio',alto','muy alto'))
     );
 
-Tabla 'cache_artista'
+Tabla `cache_artista`
 
     CREATE TABLE cache_artista(
     cache VARCHAR(30) NOT NULL CONSTRAINT cache_pk PRIMARY KEY(cache),
@@ -34,7 +34,7 @@ Tabla 'cache_artista'
     CONSTRAINT cache_artista_cache_ck CHECK (cache IN ('bajo','medio',alto','muy alto'))
     );
 
-Tabla 'backstage'
+Tabla `backstage`
 
     CREATE TABLE backstage(
     backstage_id NUMERIC(6) NOT NULL CONSTRAINT backstage_id_pk PRIMARY KEY(backstage_id),
@@ -46,7 +46,7 @@ Tabla 'backstage'
     CONSTRAINT backstage_tamaño_ck CHECK (tamaño IN ('pequeño','medio',grande','muy grande'))
     );
 
-Tabla 'escenario'
+Tabla `escenario`
 
     CREATE TABLE escenario(
     escenario_id NUMERIC(6) NOT NULL CONSTRAINT escenario_id_pk PRIMARY KEY(escenario_id),
@@ -57,7 +57,7 @@ Tabla 'escenario'
     CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire libre'))
     );
 
-Tabla 'empresa'
+Tabla `empresa`
 
     CREATE TABLE empresa(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
@@ -69,7 +69,7 @@ Tabla 'empresa'
     CONSTRAINT empresa_tamaño_ck CHECK (tamaño IN ('pequeña','mediana',multinacional'))
     );
 
-Tabla 'web'
+Tabla `web`
 
     CREATE TABLE web(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
@@ -79,42 +79,42 @@ Tabla 'web'
     CONSTRAINT web_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'seguridad'
+Tabla `seguridad`
 
     CREATE TABLE seguridad(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
     CONSTRAINT seguridad_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
     
-Tabla 'catering'
+Tabla `catering`
 
      CREATE TABLE catering(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
     CONSTRAINT catering_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'grabacion'
+Tabla `grabacion`
 
     CREATE TABLE grabacion(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
     CONSTRAINT grabacion_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'iluminacion'
+Tabla `iluminacion`
 
     CREATE TABLE iluminacion(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
     CONSTRAINT iluminacion_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'sonido'
+Tabla `sonido`
 
     CREATE TABLE sonido(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY(empresa_id),
     CONSTRAINT sonido_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'retransmision'
+Tabla `retransmision`
 
     CREATE TABLE retransmision(
     retransmision_id NUMERIC(6) NOT NULL CONSTRAINT retransmision_pk PRIMARY KEY(retransmision_id),
@@ -128,7 +128,7 @@ Tabla 'retransmision'
     CONSTRAINT retransmision_tipo_ck CHECK (tipo IN ('directo','diferido'))
     );
 
-Tabla 'merchandising'
+Tabla `merchandising`
 
     CREATE TABLE merchandising(
     merchandising_id NUMERIC(6) NOT NULL CONSTRAINT merchandising_pk PRIMARY KEY(merchadising_id),
@@ -141,7 +141,7 @@ Tabla 'merchandising'
     CONSTRAINT merchandising_talla_ck CHECK (talla IN ('S','M',L','XL'))
     );
 
-Tabla 'patrocinador'
+Tabla `patrocinador`
 
     CREATE TABLE patrocinador(
     patrocinador_id NUMERIC(6) NOT NULL CONSTRAINT patrocinador_pk PRIMARY KEY(patrocinador_id),
@@ -152,7 +152,7 @@ Tabla 'patrocinador'
     CONSTRAINT retransmision_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'artista_escenario'
+Tabla `artista_escenario`
 
     CREATE TABLE artista_escenario(
     artista_id NUMERIC(6) NOT NULL,
@@ -163,7 +163,7 @@ Tabla 'artista_escenario'
     CONSTRAINT artista_escenario_escenario_id_fk FOREIGN KEY(escenario_id) REFERENCES escenario(escenario_id)
     );
 
-Tabla 'artista_patrocinador'
+Tabla `artista_patrocinador`
 
     CREATE TABLE artista_patrocinador(
     artista_id NUMERIC(6) NORT NULL,
@@ -177,7 +177,7 @@ Tabla 'artista_patrocinador'
     CONSTRAINT artista_patrocinador_tipo_contrato_ck CHECK (tipo_contrato IN ('indefinido','temporal'))
     );
 
-Tabla 'cartel_empresa'
+Tabla `cartel_empresa`
 
     CREATE TABLE cartel_empresa(
     cartel_id NUMERIC(6) NOT NULL,
@@ -189,7 +189,7 @@ Tabla 'cartel_empresa'
     CONSTRAINT cartel_empresa_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
-Tabla 'entrada'
+Tabla `entrada`
 
     CREATE TABLE entrada(
     entrada_id NUMERIC(6) NOT NULL,
@@ -204,7 +204,7 @@ Tabla 'entrada'
     CONSTRAINT entrada_formato_ck CHECK (formato IN ('fisico','digital',alto'))
     );
 
-Tabla 'categoria_entrada'
+Tabla `categoria_entrada`
 
     CREATE TABLE categoria_entrada(
     categoria VARCHAR(30) NOT NULL,
@@ -212,7 +212,7 @@ Tabla 'categoria_entrada'
     CONSTRAINT categoria_entrada_pk PRIMARY KEY(categoria)
     );
 
-Tabla 'seguridad_escenario'
+Tabla `seguridad_escenario`
 
     CREATE TABLE seguridad_escenario(
     empresa_id NUMERIC(6) NOT NULL,
@@ -225,7 +225,7 @@ Tabla 'seguridad_escenario'
     REFERENCES escenario (escenario_id)
     );
 
-Tabla 'seguridad_backstage'
+Tabla `seguridad_backstage`
 
     CREATE TABLE seguridad_backstage(
     empresa_id NUMERIC(6) NOT NULL,
@@ -238,7 +238,7 @@ Tabla 'seguridad_backstage'
     REFERENCES backstage (backstage_id)
     );
 
-Tabla 'catering_backstage'
+Tabla `catering_backstage`
 
     CREATE TABLE catering_backstage(
     empresa_id NUMERIC(6),
@@ -251,7 +251,7 @@ Tabla 'catering_backstage'
     REFERENCES backstage (backstage_id)
     );
 
-Tabla 'iluminacion_escenario'
+Tabla `iluminacion_escenario`
 
     CREATE TABLE iluminacion_escenario(
     empresa_id NUMERIC(6),
@@ -265,7 +265,7 @@ Tabla 'iluminacion_escenario'
     REFERENCES escenario (escenario_id)
     );
 
-Tabla 'grabacion_escenario'
+Tabla `grabacion_escenario`
 
     CREATE TABLE grabacion_escenario(
     empresa_id NUMERIC(6) NOT NULL,
@@ -279,7 +279,7 @@ Tabla 'grabacion_escenario'
     REFERENCES escenario (escenario_id)
     );
 
-Tabla 'sonido_escenario'
+Tabla `sonido_escenario`
 
     CREATE TABLE sonido_escenario(
     empresa_id NUMERIC(6) NOT NULL,
