@@ -21,6 +21,7 @@ Tabla `artista`
     edad VARCHAR(30) NOT NULL,
     nombre VARCHAR(30) NOT NULL,
     cache VARCHAR(30) NOT NULL,
+    sexo VARCHAR(30) NOT NULL,
     CONSTRAINT artista_cache_fk FOREIGN KEY(cache) REFERENCES cache_artista(cache),
     CONSTRAINT artista_genero_ck CHECK (sexo IN ('M', 'V')),
     CONSTRAINT artista_cache_ck CHECK (cache IN ('bajo','medio','alto','muy alto'))
@@ -54,26 +55,29 @@ Tabla `escenario`
     extension VARCHAR(30) NOT NULL,
     tipo VARCHAR(30)NOT NULL,
     CONSTRAINT escenario_extension_ck CHECK (extension IN ('pequeño','medio','grande','muy grande')),
-    CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire' libre'))
+    CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire','libre'))
     );
 
 Tabla `empresa`
 
     CREATE TABLE empresa(
     empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
-    telefono BIGINT NOT NULL CONSTRAINT telefono_pk PRIMARY KEY,
-    direccion VARCHAR(30) NOT NULL CONSTRAINT direccion_pk PRIMARY KEY,
+    telefonoFijo BIGINT NOT NULL,
+    telefonoMovil BIGINT NOT NULL,
+    direccionSedePrincipal VARCHAR(30) NOT NULL,
+    direccionSedeSecundaria VARCHAR(30) NOT NULL,
     nombre_director VARCHAR(30) NOT NULL,
     nombre VARCHAR(30) NOT NULL,
     tamaño VARCHAR(30) NOT NULL,
-    CONSTRAINT empresa_tamaño_ck CHECK (tamaño IN ('pequeña','mediana',multinacional'))
+    CONSTRAINT empresa_tamaño_ck CHECK (tamaño IN ('pequeña','mediana','multinacional'))
     );
 
 Tabla `web`
 
     CREATE TABLE web(
-    empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
-    redes_sociales VARCHAR(30) NOT NULL CONSTRAINT redes_sociales_pk PRIMARY KEY,
+    empresa_id NUMERIC(6) NOT NULL,
+    red_socialPrincipal VARCHAR(30),
+    redes_socialSecundaria VARCHAR(30),
     servidor VARCHAR(30) NOT NULL,
     url VARCHAR(30) NOT NULL,
     CONSTRAINT web_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
@@ -82,51 +86,68 @@ Tabla `web`
 Tabla `seguridad`
 
     CREATE TABLE seguridad(
-    empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
+    empresa_id NUMERIC(6) NOT NULL,
     CONSTRAINT seguridad_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
     
 Tabla `catering`
 
      CREATE TABLE catering(
-    empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
+    empresa_id NUMERIC(6) NOT NULL,
     CONSTRAINT catering_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
 Tabla `grabacion`
 
     CREATE TABLE grabacion(
-    empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
+    empresa_id NUMERIC(6) NOT NULL,
     CONSTRAINT grabacion_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
 Tabla `iluminacion`
 
     CREATE TABLE iluminacion(
-    empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
+    empresa_id NUMERIC(6) NOT NULL,
     CONSTRAINT iluminacion_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
 Tabla `sonido`
 
     CREATE TABLE sonido(
-    empresa_id NUMERIC(6) NOT NULL CONSTRAINT empresa_id_pk PRIMARY KEY,
+    empresa_id NUMERIC(6) NOT NULL,
     CONSTRAINT sonido_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
     );
 
 Tabla `retransmision`
 
     CREATE TABLE retransmision(
-    retransmision_id NUMERIC(6) NOT NULL CONSTRAINT retransmision_pk PRIMARY KEY,
-    canal VARCHAR(30) NOT NULL CONSTRAINT canal_pk PRIMARY KEY,
-    idioma VARCHAR(30) NOT NULL CONSTRAINT idioma_pk PRIMARY KEY,
+    retransmision_id NUMERIC(6) NOT NULL CONSTRAINT retransmision_id_pk PRIMARY KEY,
+    canal_id NUMERIC(6) NOT NULL,
+    idioma_id NUMERIC(6) NOT NULL,
     duracion VARCHAR(30) NOT NULL,
     ingreso INTEGER NOT NULL,
     tipo VARCHAR(30) NOT NULL,
     empresa_id NUMERIC(6) NOT NULL,
     CONSTRAINT retransmision_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id),
+    CONSTRAINT retransmision_canal_id_fk FOREIGN KEY(canal_id) REFERENCES canal_retransmision(canal_id),
+    CONSTRAINT retransmision_idioma_id_fk FOREIGN KEY(idioma_id) REFERENCES idioma_retransmision(idioma_id),
     CONSTRAINT retransmision_tipo_ck CHECK (tipo IN ('directo','diferido'))
     );
+
+Tabla `canal_retransmision`
+    
+    CREATE TABLE canal_retransmision(
+    canal_id NUMERIC(6) NOT NULL CONSTRAINT canal_id_pk PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL
+    );
+
+Tabla `idioma_retransmision`
+
+    CREATE TABLE idioma_retransmision(
+    idioma_id NUMERIC(6) NOT NULL CONSTRAINT idioma_id_pk PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL
+    );
+    
 
 Tabla `merchandising`
 
@@ -145,11 +166,11 @@ Tabla `patrocinador`
 
     CREATE TABLE patrocinador(
     patrocinador_id NUMERIC(6) NOT NULL CONSTRAINT patrocinador_pk PRIMARY KEY,
-    telefono BIGINT NOT NULLCONSTRAINT telefono_pk PRIMARY KEY,
+    telefonoFijo BIGINT NOT NULL,
+    telefonoMovil BIGINT NOT NULL,
     sector VARCHAR(30) NOT NULL,
     direccion VARCHAR(30) NOT NULL,
-    nombre VARCHAR(30) NOT NULL,
-    CONSTRAINT retransmision_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id)
+    nombre VARCHAR(30) NOT NULL
     );
 
 Tabla `artista_escenario`
@@ -166,14 +187,13 @@ Tabla `artista_escenario`
 Tabla `artista_patrocinador`
 
     CREATE TABLE artista_patrocinador(
-    artista_id NUMERIC(6) NORT NULL,
+    artista_id NUMERIC(6) NOT NULL,
     patrocinador_id NUMERIC(6) NOT NULL,
     tipo_contrato VARCHAR(30) NOT NULL,
     duracion_contrato VARCHAR(30) NOT NULL,
     ingresos INTEGER NOT NULL,
-    CONSTRAINT artista_escenario_pk PRIMARY KEY(artista_id,escenario_id),
-    CONSTRAINT artista_escenario_artista_id_fk FOREIGN KEY(artista_id) REFERENCES artista(artista_id),
-    CONSTRAINT artista_escenario_escenario_id_fk FOREIGN KEY(escenario_id) REFERENCES escenario(escenario_id),
+    CONSTRAINT artista_patrocinador_pk PRIMARY KEY(artista_id,patrocinador_id),
+    CONSTRAINT artista_patrocinador_artista_id_fk FOREIGN KEY(artista_id) REFERENCES artista(artista_id),
     CONSTRAINT artista_patrocinador_tipo_contrato_ck CHECK (tipo_contrato IN ('indefinido','temporal'))
     );
 
