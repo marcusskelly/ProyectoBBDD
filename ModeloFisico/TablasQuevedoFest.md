@@ -23,7 +23,7 @@ Tabla `artista`
     cache VARCHAR(30) NOT NULL,
     CONSTRAINT artista_cache_fk FOREIGN KEY(cache) REFERENCES cache_artista(cache),
     CONSTRAINT artista_genero_ck CHECK (sexo IN ('M', 'V')),
-    CONSTRAINT artista_cache_ck CHECK (cache IN ('bajo','medio',alto','muy alto'))
+    CONSTRAINT artista_cache_ck CHECK (cache IN ('bajo','medio','alto','muy alto'))
     );
 
 Tabla `cache_artista`
@@ -31,7 +31,7 @@ Tabla `cache_artista`
     CREATE TABLE cache_artista(
     cache VARCHAR(30) NOT NULL CONSTRAINT cache_pk PRIMARY KEY,
     precio INTEGER NOT NULL,
-    CONSTRAINT cache_artista_cache_ck CHECK (cache IN ('bajo','medio',alto','muy alto'))
+    CONSTRAINT cache_artista_cache_ck CHECK (cache IN ('bajo','medio','alto','muy alto'))
     );
 
 Tabla `backstage`
@@ -43,7 +43,7 @@ Tabla `backstage`
     tamaño VARCHAR(30) NOT NULL,
     escenario_id NUMERIC(6) NOT NULL,
     CONSTRAINT backstage_escenario_id_fk FOREIGN KEY(escenario_id) REFERENCES escenario(escenario_id),
-    CONSTRAINT backstage_tamaño_ck CHECK (tamaño IN ('pequeño','medio',grande','muy grande'))
+    CONSTRAINT backstage_tamaño_ck CHECK (tamaño IN ('pequeño','medio','grande','muy grande'))
     );
 
 Tabla `escenario`
@@ -53,8 +53,8 @@ Tabla `escenario`
     gasto INTEGER NOT NULL,
     extension VARCHAR(30) NOT NULL,
     tipo VARCHAR(30)NOT NULL,
-    CONSTRAINT escenario_extension_ck CHECK (extension IN ('pequeño','medio',grande','muy grande')),
-    CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire libre'))
+    CONSTRAINT escenario_extension_ck CHECK (extension IN ('pequeño','medio','grande','muy grande')),
+    CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire' libre'))
     );
 
 Tabla `empresa`
@@ -138,7 +138,7 @@ Tabla `merchandising`
     talla VARCHAR(30) NOT NULL,
     artista_id NUMERIC(6) NOT NULL,
     CONSTRAINT merchandising_artista_id_fk FOREIGN KEY(artista_id) REFERENCES artista(artista_id),
-    CONSTRAINT merchandising_talla_ck CHECK (talla IN ('S','M',L','XL'))
+    CONSTRAINT merchandising_talla_ck CHECK (talla IN ('S','M','L','XL'))
     );
 
 Tabla `patrocinador`
@@ -201,7 +201,7 @@ Tabla `entrada`
     CONSTRAINT entrada_pk PRIMARY KEY(entrada_id),
     CONSTRAINT entrada_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id),
     CONSTRAINT entrada_categoria_fk FOREIGN KEY(categoria) REFERENCES categoria_entrada(categoria),
-    CONSTRAINT entrada_formato_ck CHECK (formato IN ('fisico','digital',alto'))
+    CONSTRAINT entrada_formato_ck CHECK (formato IN ('fisico','digital','alto'))
     );
 
 Tabla `categoria_entrada`
