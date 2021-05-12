@@ -312,3 +312,5 @@ Tabla `sonido_escenario`
     CONSTRAINT sonido_escenario_escenario_id_fk FOREIGN KEY (escenario_id)
     REFERENCES escenario (escenario_id)
     );
+    
+
