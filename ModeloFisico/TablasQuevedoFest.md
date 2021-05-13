@@ -17,7 +17,6 @@ Tabla `artista`
 
     CREATE TABLE artista(
     artista_id NUMERIC(6) NOT NULL CONSTRAINT artista_id_pk PRIMARY KEY,
-    genero VARCHAR(30) NOT NULL,
     edad VARCHAR(30) NOT NULL,
     nombre VARCHAR(30) NOT NULL,
     cache VARCHAR(30) NOT NULL,
