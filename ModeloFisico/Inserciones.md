@@ -1,6 +1,6 @@
 # Añadir registros
 
-1. Tabla artistas
+1. Tabla `artistas`
    ~~~
    insert into artista values (01, 44, 'Armin van Buuren', 'alto', 'V'), (02, 41, 'Don Diablo', 'alto', 'V'), 
    (03, 38, 'Steve Angello', 'alto', 'V'), (04, 39, 'Brennan Heart', 'medio', 'V'), (05 , 43, 'Steve Aoki', 'alto', 'V'), 
