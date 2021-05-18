@@ -67,21 +67,8 @@
    (09, 2700, '14 mesas', 'pequeño',07),
    ~~~
 
-6. Tabla `backstage`
    
-    ~~~
-   insert into backstage values (01, 8000, '53 mesas', 'muy grande',05),
-   (02, 3400, '23 mesas', 'medio',02),
-   (03, 5000, '34 mesas', 'grande',04),
-   (04, 2300, '12 mesas', 'pequeño',03),
-   (05, 1800, '17 mesas', 'pequeño',06),
-   (06, 2000, '8 mesas', 'pequeño',01),
-   (07, 4500, '21 mesas', 'medio',08),
-   (08, 6500, '41 mesas', 'grande',09),
-   (09, 2700, '14 mesas', 'pequeño',07),
-   ~~~
-   
-7. Tabla `empresa`
+6. Tabla `empresa`
    
     ~~~
    insert into empresa values (01, 915737695, 646754062, 'Calle Fuencarral 32','Calle Mercedes 48', 'Pablo Alfaro', 'Seguritas Stages',   'mediana'),
@@ -106,7 +93,7 @@
    (20, 945730695, 646754032, 'Calle Fuencarral 18',NULL, 'Pablo Nieto', 'Food Express', 'mediana'),
    ~~~
    
- 8. Tabla `web`
+ 7. Tabla `web`
       ~~~
       insert into web values (15, 'Facebook', 'Twitter', 'Server.net','Web4you.com'),
       (19, 'Facebook y Twitter', 'Instagram', 'Server.net','GhostyRecords.com'),
@@ -117,8 +104,8 @@
    
  8. Tabla `seguridad`
       ~~~
-      insert into web values (15, 'Facebook', 'Twitter', 'Server.net','Web4you.com'),
-      (19, 'Facebook y Twitter', 'Instagram', 'Server.net','GhostyRecords.com'),
+      insert into seguridad values (01, 'Facebook', 'Twitter', 'Server.net','SeguritasStages.com'),
+      (02, 'Facebook y Twitter', 'Instagram', 'Server.net','SafeNSound.co.uk'),
       (16, 'Facebook e Instagram', NULL, 'Servidores.net','WorldWeb.com'),
       (14, 'Facebook Twitter e Instagram', 'Telegram', 'Apache.net','MKThePlug.co.uk'),
       (13, 'Instagram y Twitter', NULL, 'Apache.net','M1OnTheBeat.com'),
