@@ -66,7 +66,7 @@ Tabla `empresa`
     telefonoFijo BIGINT NOT NULL,
     telefonoMovil BIGINT NOT NULL,
     direccionSedePrincipal VARCHAR(30) NOT NULL,
-    direccionSedeSecundaria VARCHAR(30) NOT NULL,
+    direccionSedeSecundaria VARCHAR(30),
     nombre_director VARCHAR(30) NOT NULL,
     nombre VARCHAR(30) NOT NULL,
     tamaño VARCHAR(30) NOT NULL,
