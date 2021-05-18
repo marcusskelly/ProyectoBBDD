@@ -53,6 +53,8 @@ Tabla `escenario`
     gasto INTEGER NOT NULL,
     extension VARCHAR(30) NOT NULL,
     tipo VARCHAR(30)NOT NULL,
+    aforo VARCHAR(30) NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
     CONSTRAINT escenario_extension_ck CHECK (extension IN ('pequeño','medio','grande','muy grande')),
     CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire','libre'))
     );
