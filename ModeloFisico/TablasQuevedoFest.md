@@ -56,7 +56,7 @@ Tabla `escenario`
     aforo VARCHAR(30) NOT NULL,
     nombre VARCHAR(30) NOT NULL,
     CONSTRAINT escenario_extension_ck CHECK (extension IN ('pequeño','medio','grande','muy grande')),
-    CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire','libre'))
+    CONSTRAINT escenario_tipo_ck CHECK (tipo IN ('cubierto','aire libre','techo retractil'))
     );
 
 Tabla `empresa`
