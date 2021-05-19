@@ -157,7 +157,7 @@ Tabla `merchandising`
     producto VARCHAR(30) NOT NULL,
     gama VARCHAR(30) NOT NULL,
     ingresos INTEGER NOT NULL,
-    talla VARCHAR(30) NOT NULL,
+    talla VARCHAR(30),
     artista_id NUMERIC(6) NOT NULL,
     CONSTRAINT merchandising_artista_id_fk FOREIGN KEY(artista_id) REFERENCES artista(artista_id),
     CONSTRAINT merchandising_talla_ck CHECK (talla IN ('S','M','L','XL'))
