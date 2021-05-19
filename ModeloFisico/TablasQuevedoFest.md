@@ -155,7 +155,7 @@ Tabla `merchandising`
     CREATE TABLE merchandising(
     merchandising_id NUMERIC(6) NOT NULL CONSTRAINT merchandising_pk PRIMARY KEY,
     producto VARCHAR(30) NOT NULL,
-    gama VARCHAR(30) NOT NULL,
+    gama VARCHAR(30),
     ingresos INTEGER NOT NULL,
     talla VARCHAR(30),
     artista_id NUMERIC(6) NOT NULL,
