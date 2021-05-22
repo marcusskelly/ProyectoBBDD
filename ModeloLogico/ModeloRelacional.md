@@ -24,3 +24,4 @@
 * Iluminacion_Escenario(Empresa_id FK,Escenario_id FK,situacion_escenario,numero_focos
 * Grabacion_Escenario(Empresa_id FK,Escenario_id FK,situacion_escenario,numero_camaras
 * Sonido_Escenario(Empresa_id FK,Escenario_id FK,situacion_escenario,numero_micros
+* Cartel_Artista(artista_id FK,cartel_id FK
