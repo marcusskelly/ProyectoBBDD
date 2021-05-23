@@ -318,9 +318,10 @@ Tabla `cartel_artista`
 
     CREATE TABLE cartel_artista(
     artista_id NUMERIC(6) NOT NULL,
-    cartel_id_id NUMERIC(6) NOT NULL,
+    cartel_id NUMERIC(6) NOT NULL,
     CONSTRAINT cartel_artista_pk PRIMARY KEY(artista_id,cartel_id),
     CONSTRAINT cartel_artista_artista_id_fk FOREIGN KEY (artista_id) 
     REFERENCES artista (artista_id),
     CONSTRAINT cartel_artista_cartel_id_fk FOREIGN KEY (cartel_id)
     REFERENCES cartel (cartel_id)
+    );
