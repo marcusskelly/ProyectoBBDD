@@ -18,25 +18,25 @@
 
 2. Tabla `cartel`
     ~~~
-   insert into cartel values (01, 2012/08/12, 2012/08/16, 'Almeria', 800000,'QuevedoFest2012'),
-   (02, 2012/12/21, 2012/12/24, 'Miami', 600000,'QuevedoFestWinterEdition2012'),
-   (03, 2013/08/14, 2013/08/18, 'Malaga', 1200000,'QuevedoFest2013'),
-   (04, 2013/12/20, 2013/12/23, 'Andorra', 400000,'QuevedoFestWinterEdition2013'),
-   (05, 2014/08/12, 2014/08/17, 'Madrid', 900000,'QuevedoFest2014'),
-   (06, 2015/04/21, 2015/04/25, 'Magaluf', 560000,'QuevedoFestEasterEdition2015'),
-   (07, 2015/08/14, 2015/08/18, 'Almeria', 1250000,'QuevedoFest2015'),
-   (08, 2016/04/20, 2016/04/24, 'Boston', 850000,'QuevedoFestEasterEdition2016'),
-   (09, 2016/08/11, 2016/08/15, 'Barcelona', 2000000,'QuevedoFest2016'),
-   (10, 2016/12/21, 2016/12/25, 'Malta', 470000,'QuevedoFestWinterEdition2016'),
-   (11, 2018/08/13, 2018/08/17, 'Munich', 1400000,'QuevedoFest2018'),
-   (12, 2018/12/21, 2018/12/24, 'Los Angeles', 3200000,'QuevedoFestWinterEdition2018'),
-   (13, 2019/08/14, 2019/08/20, 'Miami', 1250000,'QuevedoFest2019'),
-   (14, 2020/08/12, 2012/08/16, 'Madrid', 2300000,'QuevedoFest2020'),
+   insert into cartel values (01, '2012/08/12', '2012/08/16', 'Almeria', 800000,'QuevedoFest2012'),
+   (02, '2012/12/21', '2012/12/24', 'Miami', 600000,'QuevedoFestWinterEdition2012'),
+   (03, '2013/08/14', '2013/08/18', 'Malaga', 1200000,'QuevedoFest2013'),
+   (04, '2013/12/20', '2013/12/23', 'Andorra', 400000,'QuevedoFestWinterEdition2013'),
+   (05, '2014/08/12', '2014/08/17', 'Madrid', 900000,'QuevedoFest2014'),
+   (06, '2015/04/21', '2015/04/25', 'Magaluf', 560000,'QuevedoFestEasterEdition2015'),
+   (07, '2015/08/14', '2015/08/18', 'Almeria', 1250000,'QuevedoFest2015'),
+   (08, '2016/04/20', '2016/04/24', 'Boston', 850000,'QuevedoFestEasterEdition2016'),
+   (09, '2016/08/11', '2016/08/15', 'Barcelona', 2000000,'QuevedoFest2016'),
+   (10, '2016/12/21', '2016/12/25', 'Malta', 470000,'QuevedoFestWinterEdition2016'),
+   (11, '2018/08/13', '2018/08/17', 'Munich', 1400000,'QuevedoFest2018'),
+   (12, '2018/12/21', '2018/12/24', 'Los Angeles', 3200000,'QuevedoFestWinterEdition2018'),
+   (13, '2019/08/14', '2019/08/20', 'Miami', 1250000,'QuevedoFest2019'),
+   (14, '2020/08/12', '2012/08/16', 'Madrid', 2300000,'QuevedoFest2020');
    ~~~
    
 3. Tabla `cache_artista`
     ~~~
-   insert into cache_artista values ('bajo', 25000),('medio', 50000),('alto', 100000),('muy alto', 200000),
+   insert into cache_artista values ('bajo', 25000),('medio', 50000),('alto', 100000),('muy alto', 200000);
    ~~~
 
 4. Tabla `escenario`
@@ -44,27 +44,27 @@
     ~~~
    insert into escenario values (01, 12000, 'pequeño', 'cubierto', '4000 personas' ,'Brugal Stage'),
    (02, 18000, 'medio' , 'cubierto', '8500 personas','Bacardi Stage'),
-   (03, 9000, 'pequeño', 'aire libre', '5600 personas','Jack Daniel's Stage'),
+   (03, 9000, 'pequeño', 'aire libre', '5600 personas','Jack Daniel´s Stage'),
    (04, 25000, 'grande', 'techo reractil', '12000 personas','Barceló Stage'),
    (05, 32000, 'muy grande', 'aire libre', '25000 personas','Main Stage'),
    (06, 6000, 'pequeño', 'aire libre', '3200 personas','Smirnoff Stage'),
    (07, '8000', 'pequeño', 'cubierto', '6200 personas','Absolut Stage'),
    (08, 15000, 'medio', 'aire libre', '9100 personas','Negrita Stage'),
-   (09, 23200, 'grande', 'cubierto', '15000 personas' ,'White Label Stage'),
+   (09, 23200, 'grande', 'cubierto', '15000 personas' ,'White Label Stage');
    ~~~
 
 5. Tabla `backstage`
    
     ~~~
-   insert into backstage values (01, 8000, '53 mesas', 'muy grande',05),
-   (02, 3400, '23 mesas', 'medio',02),
-   (03, 5000, '34 mesas', 'grande',04),
-   (04, 2300, '12 mesas', 'pequeño',03),
-   (05, 1800, '17 mesas', 'pequeño',06),
-   (06, 2000, '8 mesas', 'pequeño',01),
-   (07, 4500, '21 mesas', 'medio',08),
-   (08, 6500, '41 mesas', 'grande',09),
-   (09, 2700, '14 mesas', 'pequeño',07),
+   insert into backstage values (01, 8000, '53', 'muy grande',05),
+   (02, 3400, '23', 'medio',02),
+   (03, 5000, '34', 'grande',04),
+   (04, 2300, '12', 'pequeño',03),
+   (05, 1800, '17', 'pequeño',06),
+   (06, 2000, '8', 'pequeño',01),
+   (07, 4500, '21', 'medio',08),
+   (08, 6500, '41', 'grande',09),
+   (09, 2700, '14', 'pequeño',07);
    ~~~
 
    
@@ -90,7 +90,7 @@
    (17, 912757642, 622723402, 'Calle Aluche 55','Calle Atocha 31', 'Ignacio Perez', 'Antena 3', 'pequeña'),
    (18, 955337098, 611454562, 'Calle Medina 54',NULL, 'Pablo Alfaro', 'Light 4 you', 'mediana'),
    (19, 923727598, 623757162, 'Calle Sierra Madrona 32',NULL, 'Pablo Iglesias', 'Ghosty Records', 'pequeña'),
-   (20, 945730695, 646754032, 'Calle Fuencarral 18',NULL, 'Pablo Nieto', 'Food Express', 'mediana'),
+   (20, 945730695, 646754032, 'Calle Fuencarral 18',NULL, 'Pablo Nieto', 'Food Express', 'mediana');
    ~~~
    
  7. Tabla `web`
@@ -99,7 +99,7 @@
       (19, 'Facebook y Twitter', 'Instagram', 'Server.net','GhostyRecords.com'),
       (16, 'Facebook e Instagram', NULL, 'Servidores.net','WorldWeb.com'),
       (14, 'Facebook Twitter e Instagram', 'Telegram', 'Apache.net','MKThePlug.co.uk'),
-      (13, 'Instagram y Twitter', NULL, 'Apache.net','M1OnTheBeat.com'),
+      (13, 'Instagram y Twitter', NULL, 'Apache.net','M1OnTheBeat.com');
        ~~~
    
  8. Tabla `seguridad`
@@ -109,28 +109,28 @@
       (16, 'Facebook e Instagram', NULL, 'Servidores.net','WorldWeb.com'),
       (14, 'Facebook Twitter e Instagram', 'Telegram', 'Apache.net','MKThePlug.co.uk'),
       (13, 'Instagram y Twitter', NULL, 'Apache.net','M1OnTheBeat.com'),
-      (10, 'Instagram y Twitter', 'Facebook', 'Server.net','SecuritasDirect.es'),
+      (10, 'Instagram y Twitter', 'Facebook', 'Server.net','SecuritasDirect.es');
       ~~~
       
       
 9. Tabla `catering`
     ~~~
-   insert into catering values (12),(08),(09),(20),
+   insert into catering values (12),(08),(09),(20);
    ~~~
    
 10. Tabla `grabacion`
        ~~~
-      insert into grabacion values (19),(06),(11),(17),(13)
+      insert into grabacion values (19),(06),(11),(17),(13);
       ~~~ 
       
 11. Tabla `iluminacion`
        ~~~
-      insert into iluminacion values (03),(04),(07),(19),(13),(18)
+      insert into iluminacion values (03),(04),(07),(19),(13),(18);
       ~~~ 
       
 11. Tabla `sonido`
        ~~~
-      insert into sonido values (19),(14),(13),(05),(06)
+      insert into sonido values (19),(14),(13),(05),(06);
       ~~~ 
       
 12. Tabla `canal_retransmision`
@@ -138,13 +138,13 @@
        ~~~
       insert into canal_retransmision values (01,'BBC'),(02,'Movistar'),(03,'Onda Cero'),(04,'as'),(05,'TVE'),(06,'Antena 3'),(07,'BT'),(08,'Virgin Media'),
       (09,'La Radio'),(10,'France TV'),(11,'TeleMadrid'),(12,'CNN'),(13,'Canal +'),(14,'La Sexta'),(15,'Telecinco'),(16,'ITV'),(17,'Channel 3'),(18,'America News'),
-      (19,'Cuatro'),
+      (19,'Cuatro');
        ~~~ 
        
 13. Tabla `idioma_retransmision`
    
        ~~~
-      insert into idioma_retransmision values (01,'Español'),(02,'Ingles'),(03,'Frances'),(04,'Italiano'),(05,'Arabe'),(06,'Portugues'),(07,'Ruso'),(08,'Checo'),
+      insert into idioma_retransmision values (01,'Español'),(02,'Ingles'),(03,'Frances'),(04,'Italiano'),(05,'Arabe'),(06,'Portugues'),(07,'Ruso'),(08,'Checo');
        ~~~ 
        
 14. Tabla `retransmision`
@@ -164,7 +164,7 @@
       (07, 08, 02, '156 minutos', 3800 ,'directo'),(07, 05, 01, '180 minutos', 2950 ,'directo'),(07, 10, 03, '130 minutos', 8100 ,'directo'),
       (07, 17, 05, '114 minutos', 5400 ,'directo'),(08, 01, 04, '132 minutos', 4350 ,'diferido'),(08, 01, 06, '118 minutos', 1700 ,'diferido'),
       (08, 01, 07, '134minutos', 3100 ,'diferido'),(08, 01, 03, '148 minutos', 3240 ,'diferido'),(08, 01, 05, '112minutos', 2300 ,'diferido'),
-      (08, 01, 08, '128 minutos', 800 ,'diferido'),(08, 01, 02, '123 minutos', 1600 ,'diferido'),
+      (08, 01, 08, '128 minutos', 800 ,'diferido'),(08, 01, 02, '123 minutos', 1600 ,'diferido');
       ~~~
       
 15. Tabla `merchandising`
@@ -211,7 +211,7 @@
       (157, 'llavero', NULL, 6,NULL,24),(158, 'llavero', NULL, 6,NULL,22),(159, 'llavero', NULL, 6,NULL,20),(160, 'llavero', NULL, 6,NULL,03),(04, 'llavero', NULL, 6,NULL,23),
       (161, 'disco', NULL, 12,NULL,31),(162, 'disco', NULL, 12,NULL,28),(163, 'disco', NULL, 12,NULL,26),(164, 'disco', NULL, 12,NULL,33),(05, 'disco', NULL, 12,NULL,30),
       (165, 'disco', NULL, 12,NULL,21),(166, 'disco', NULL, 12,NULL,14),(167, 'disco', NULL, 12,NULL,12),(168, 'disco', NULL, 12,NULL,10),(05, 'disco', NULL, 12,NULL,08),
-      (169, 'disco', NULL, 12,NULL,02),(170, 'disco', NULL, 12,NULL,07),(171, 'disco', NULL, 12,NULL,11),(172, 'disco', NULL, 12,NULL,29),(173, 'disco', NULL, 12,NULL,35),
+      (169, 'disco', NULL, 12,NULL,02),(170, 'disco', NULL, 12,NULL,07),(171, 'disco', NULL, 12,NULL,11),(172, 'disco', NULL, 12,NULL,29),(173, 'disco', NULL, 12,NULL,35);
       ~~~      
       
       
@@ -222,7 +222,7 @@
       (08,912730625,626359061, 'Deportes', 'Calle San Rafael 23' ,'Adidas'),(09,935537605,640750462, 'Reposteria', 'Calle Los Santos 10' ,'Arla'),
       (10,915017095,626004062, 'Alimentacion', 'Calle de Los Buitres 14' ,'Alcampo'),(11,915430615,616750012, 'Alimentacion', 'Calle San Ramon 11' ,'Dia'),
       (12,912738691,613650012, 'Deportes', 'Calle Paseo de la Victoria' ,'Asics'),(13,915430415,641054022, 'Tecnologia', 'Calle Las Magras 2' ,'Google'),
-      (14,916730215,626054102, 'Tecnologia', 'Calle San Vicente 17' ,'Facebook'),(15,914227600,623751002, 'Tecnologia', 'Calle Vladimir 50' ,'Twitter'),
+      (14,916730215,626054102, 'Tecnologia', 'Calle San Vicente 17' ,'Facebook'),(15,914227600,623751002, 'Tecnologia', 'Calle Vladimir 50' ,'Twitter');
       ~~~     
 
 17. Tabla `artista_escenario`
@@ -241,7 +241,7 @@
       (25,01,'1 hora y 33 minutos'),(26,05,'1 hora y 30 minutos'),(27,07,'1 hora y 15 minutos'),(28,02,'1 hora y 54 minutos'),
       (29,01,'1 hora y 13 minutos'),(29,04,'1 hora y 32 minutos'),(29,03,'1 hora y 58 minutos'),(30,04,'48 minutos'),
       (31,03,'1 hora y 34 minutos'),(32,04,'1 hora y 48 minutos'),(33,01,'1 hora y 34 minutos'),(34,01,'1 hora y 13 minutos'),
-      (35,09,'1 hora y 10 minutos'),(36,05,'1 hora y 17 minutos'),
+      (35,09,'1 hora y 10 minutos'),(36,05,'1 hora y 17 minutos');
        ~~~ 
        
  18. Tabla `artista_patrocinador`
@@ -261,7 +261,7 @@
       (29, 07, 'temporal', '10 meses',7600),(30, 08, 'temporal', '27 meses',8700),(31, 06, 'temporal', '5 meses',3100),
       (32, 04, 'temporal', '14 meses',9600),(34, 04, 'indefinido', 'indefinido',32000),(34, 01, 'temporal', '24 meses',14000),
       (34, 05, 'temporal', '8 meses',4800),(34, 08, 'temporal', '13 meses',4800),(34, 12, 'temporal', '3 meses',15000),
-      (34, 14, 'temporal', '2 meses',8000),(35, 07, 'temporal', '7 meses',4100),
+      (34, 14, 'temporal', '2 meses',8000),(35, 07, 'temporal', '7 meses',4100);
       ~~~ 
       
  19. Tabla `cartel_empresa`
@@ -280,7 +280,7 @@
       (11, 13, 9 ,4300),(11, 05, 4 ,7500),(11, 07, 12 ,3200),(12, 02, 16 ,8700),(12, 13, 7 ,8700),(12, 08, 7 ,4500),
       (12, 06, 9 ,6500),(12, 07, 8 ,6100),(12, 05, 7 ,4800),(13, 01, 24 ,13000),(13, 14, 3 ,8700),(13, 16, 8 ,7500),
       (13, 20, 5 ,4600),(13, 11, 9 ,5400),(13, 18, 8 ,8500),(13, 05, 7 ,6700),(14, 02, 12 ,7800),(14, 13, 6 ,6100),
-      (14, 05, 18 ,2300),(14, 07, 8 ,3500),(14, 06, 18 ,8900),
+      (14, 05, 18 ,2300),(14, 07, 8 ,3500),(14, 06, 18 ,8900);
       ~~~      
 
  20. Tabla `entrada`
@@ -304,27 +304,27 @@
       (33,13, 'VIP + reservado' ,'fisico','2019-12-21',NULL),(34,13, 'VIP + Reservado + Hotel' ,'digital','2016-09-15',NULL),
       (35,13, 'Estandar' ,'digital','2017-10-13','30 dias'),(36,13, 'Estandar + Parking' ,'fisico','2019-11-23','30 dias'),
       (37,13, 'Estandar + Parking' ,'fisico','2015-07-14','30 dias'),(38,13, 'VIP' ,'digital','2018-12-17',NULL),
-      (39,13, 'VIP + Reservado + Hotel' ,'fisico','2018-11-13',NULL),(40,15, 'Estandar' ,'digital','2015-07-14','30 dias'),
+      (39,13, 'VIP + Reservado + Hotel' ,'fisico','2018-11-13',NULL),(40,15, 'Estandar' ,'digital','2015-07-14','30 dias');
       ~~~ 
       
  21. Tabla `categoria_entrada`
       ~~~
       insert into categoria_entrada values ('VIP', 110),('Estandar', 60),('VIP + reservado', 160),('Estandar + Parking', 85),
-      ('VIP + Reservado + Hotel', 230)
+      ('VIP + Reservado + Hotel', 230);
       ~~~
       
  22. Tabla `seguridad_escenario`
       ~~~
       insert into seguridad_escenario values (01, 01,3),(02, 01,4),(16, 02,5),(01, 01,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 03,3),
       (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 06,7),
-      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4),
+      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4);
       ~~~ 
       
  23. Tabla `seguridad_backstage`
       ~~~
       insert into seguridad_backstage values (01, 01,3),(02, 01,4),(16, 02,5),(01, 01,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 03,3),
       (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 06,7),
-      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4),
+      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4);
       ~~~ 
       
  24. Tabla `catering_backstage`
@@ -332,7 +332,7 @@
       insert into catering_backstage values (12, 01,'asiatica'),(08, 01,'italiana'),(12, 01,'Mediterranea'),(09, 02,'India'),
       (20, 02,'asiatica e India'),(12, 02,'italiana'),(08, 03,'asiatica'),(09, 04,'asiatica e italiana'),(12, 04,'asiatica'),
       (20, 05,'Mediterranea'),(08, 05,'India'),(09, 05,'asiatica'),(12, 06,'asiatica e India'),(09, 06,'Italiana'),(20, 06,'asiatica'),
-      (12, 07,'asiatica'),(09, 07,'Mediterranea'),(08, 07,'italiana'),(12, 09,'asiatica'),(09, 09,'india'),
+      (12, 07,'asiatica'),(09, 07,'Mediterranea'),(08, 07,'italiana'),(12, 09,'asiatica'),(09, 09,'india');
       ~~~
       
  25. Tabla `iluminacion_escenario`
@@ -341,7 +341,7 @@
       (13, 02,7,'Suelo'),(13, 03,5,'Suelo'),(03, 03,7,'Frente'),(07, 03,3,'Techo'),(07, 04,3,'Fondo Y techo'),(19, 04,12,'Frente'),
       (04, 04,2,'Fondo'),(07, 05,4,'Fondo'),(07, 05,7,'Techo'),(03, 05,4,'Frente Y techo'),(13, 06,5,'Frente'),(07, 06,6,'Fondo'),
       (19, 06,5,'techo'),(07, 07,4,'Fondo'),(03, 07,13,'Fondo, frente y techo'),(04, 07,5,'Fondo'),(07, 08,4,'Fondo y frente'),
-      (19, 08,5,'Fondo y techo'),(04, 08,5,'techo y suelo'),(07, 09,8,'Fondo'),(04, 09,5,'Fondo y suelo'),
+      (19, 08,5,'Fondo y techo'),(04, 08,5,'techo y suelo'),(07, 09,8,'Fondo'),(04, 09,5,'Fondo y suelo');
       ~~~      
 
 26. Tabla `grabacion_escenario`
@@ -350,7 +350,7 @@
       (13, 02,7,'Tarima'),(11, 02,3,'Fondo'),(17, 02,4,'Fondo'),(17, 03,3,'Tarima'),(13, 03,6,'Fondo Y tarima'),(19, 04,12,'Frente'),
       (06, 04,2,'Fondo'),(11, 05,4,'Fondo'),(17, 05,7,'Techo'),(06, 05,4,'Frente Y techo'),(19, 06,5,'Frente'),(13, 06,6,'Fondo'),
       (11, 06,5,'techo'),(11, 07,4,'Fondo'),(06, 07,13,'Fondo, frente y tarima'),(17, 07,5,'Fondo'),(19, 08,4,'Fondo y frente'),
-      (11, 08,5,'Fondo y techo'),(17, 08,5,'tarima y frente'),(13, 09,8,'Fondo'),(17, 09,5,'Fondo y tarima'),
+      (11, 08,5,'Fondo y techo'),(17, 08,5,'tarima y frente'),(13, 09,8,'Fondo'),(17, 09,5,'Fondo y tarima');
       ~~~ 
  
 27. Tabla `sonido_escenario`
@@ -359,7 +359,7 @@
       (06, 02,7,'Tarima'),(19, 02,3,'Fondo'),(14, 02,4,'Fondo'),(14, 03,3,'Tarima'),(13, 03,6,'Fondo Y tarima'),(19, 04,12,'Frente'),
       (06, 04,2,'Fondo'),(14, 05,4,'Fondo'),(19, 05,7,'Techo'),(06, 05,4,'Frente Y techo'),(19, 06,5,'Frente'),(13, 06,6,'Fondo'),
       (05, 06,5,'techo'),(14, 07,4,'Fondo'),(05, 07,13,'Fondo, frente y tarima'),(06, 07,5,'Fondo'),(19, 08,4,'Fondo y frente'),
-      (05, 08,5,'Fondo y techo'),(14, 08,5,'tarima y frente'),(13, 09,8,'Fondo'),(19, 09,5,'Fondo y tarima'),
+      (05, 08,5,'Fondo y techo'),(14, 08,5,'tarima y frente'),(13, 09,8,'Fondo'),(19, 09,5,'Fondo y tarima');
       ~~~  
 28. Tabla `cartel_artista`
       ~~~
@@ -373,5 +373,5 @@
       (24, 10),(24, 08),(24, 06),(24, 04),(25, 12),(25, 10),(25, 05),(25, 13),(25, 06),(26, 14),(26, 12),(26, 14),(26, 06),(26, 09),
       (27, 14),(27, 13),(27, 11),(27, 10),(27, 08),(28, 01),(28, 04),(28, 08),(28, 07),(29, 02),(29, 01),(29, 13),(29, 07),(30, 02),
       (30, 04),(30, 07),(30, 14),(31, 02),(31, 01),(31, 11),(31, 03),(31, 09),(32, 03),(32, 11),(33, 03),(33, 01),(33, 05),(33, 06),
-      (33, 09),(33, 10),(34, 08),(34, 01),(34, 05),(34, 11),(35, 06),(35, 04),(35, 07),(35, 09),(35, 10),(35, 12),(35, 03),(36, 06),
+      (33, 09),(33, 10),(34, 08),(34, 01),(34, 05),(34, 11),(35, 06),(35, 04),(35, 07),(35, 09),(35, 10),(35, 12),(35, 03),(36, 06);
       ~~~
