@@ -222,7 +222,7 @@ Tabla `entrada`
     CONSTRAINT entrada_pk PRIMARY KEY(entrada_id),
     CONSTRAINT entrada_empresa_id_fk FOREIGN KEY(empresa_id) REFERENCES empresa(empresa_id),
     CONSTRAINT entrada_categoria_fk FOREIGN KEY(categoria) REFERENCES categoria_entrada(categoria),
-    CONSTRAINT entrada_formato_ck CHECK (formato IN ('fisico','digital','alto'))
+    CONSTRAINT entrada_formato_ck CHECK (formato IN ('fisico','digital'))
     );
 
 Tabla `categoria_entrada`
