@@ -4,7 +4,7 @@
    ~~~
    insert into artista values (01, 44, 'Armin van Buuren', 'alto', 'V'), (02, 41, 'Don Diablo', 'alto', 'V'), 
    (03, 38, 'Steve Angello', 'alto', 'V'), (04, 39, 'Brennan Heart', 'medio', 'V'), (05 , 43, 'Steve Aoki', 'alto', 'V'), 
-   (06, 28, 'Eptic' 'medio', 'V'), (07, 23, 'Anier', 'bajo', 'M'), (08, 24, 'Bad Gyal' 'medio', 'M'), 
+   (06, 28, 'Eptic', 'medio', 'V'), (07, 23, 'Anier', 'bajo', 'M'), (08, 24, 'Bad Gyal', 'medio', 'M'), 
    (09, 25, 'Wade', 'bajo', 'V'), (10, 33, 'Nina Kraviz', 'muy alto', 'M'), (11, 30, 'Amelie Lens', 'alto', 'M'),
    (12, 27, 'Axwell', 'medio', 'V'), (14, 34, 'Hardwell', 'muy alto', 'V'), (15, 30, 'Coone', 'medio', 'V'),
    (16, 29, 'Jamie Jones', 'medio', 'V'), (17, 48, 'Vicente One More Time', 'alto', 'V'), (18, 25, 'Martin Garrix', 'alto', 'V'),
