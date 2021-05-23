@@ -282,3 +282,63 @@
       (13, 20, 5 ,4600),(13, 11, 9 ,5400),(13, 18, 8 ,8500),(13, 05, 7 ,6700),(14, 02, 12 ,7800),(14, 13, 6 ,6100),
       (14, 05, 18 ,2300),(14, 07, 8 ,3500),(14, 06, 18 ,8900),
       ~~~      
+
+ 20. Tabla `entrada`
+      ~~~
+      insert into entrada values (01,15, 'VIP' ,'fisico','2018-02-12',NULL),(02,15, 'Estandar' ,'digital','2015-07-14','30 dias'),
+      (03,15, 'Estandar' ,'fisico','2016-08-21','30 dias'),(04,15, 'VIP + reservado' ,'fisico','2020-01-01',NULL),
+      (05,15, 'Estandar + Parking' ,'digital','2017-08-10','30 dias'),(06,15, 'Estandar + Parking' ,'digital','2015-09-28','30 dias'),
+      (07,19, 'Estandar' ,'fisico','2015-10-23','30 dias'),(08,19, 'VIP' ,'digital','2019-08-02',NULL),
+      (09,19, 'VIP + Reservado + Hotel' ,'digital','2017-07-14',NULL),(10,19, 'Estandar' ,'fisico','2014-01-14','30 dias'),
+      (11,19, 'Estandar + Parking' ,'fisico','2017-09-21','30 dias'),(12,15, 'Estandar' ,'fisico','2019-12-14','30 dias'),
+      (13,19, 'VIP' ,'digital','2018-06-14',NULL),(14,19, 'Estandar + Parking' ,'digital','2020-05-10','30 dias'),
+      (15,19, 'VIP + Reservado + Hotel' ,'fisico','2017-11-28',NULL),(16,16, 'Estandar' ,'digital','2015-12-14','30 dias'),
+      (17,16, 'Estandar + Parking' ,'digital','2021-02-12','30 dias'),(18,16, 'VIP' ,'digital','2016-08-24',NULL),
+      (19,16, 'VIP + Reservado + Hotel' ,'fisico','2018-04-11',NULL),(20,16, 'Estandar + Parking' ,'fisico','2015-07-14','30 dias'),
+      (21,14, 'Estandar' ,'fisico','2017-12-29','30 dias'),(22,14, 'VIP' ,'fisico','2019-03-21',NULL),
+      (23,14, 'Estandar + Parking' ,'digital','2018-10-14','30 dias'),(24,14, 'VIP' ,'fisico','2018-12-16',NULL),
+      (25,14, 'VIP + Reservado + Hotel' ,'fisico','2019-10-25',NULL),(26,14, 'Estandar + Parking' ,'fisico','2018-07-13','30 dias'),
+      (27,13, 'Estandar' ,'fisico','2017-07-10','30 dias'),(28,13, 'VIP' ,'digital','2019-11-19',NULL),
+      (29,13, 'Estandar' ,'fisico','2019-07-21','30 dias'),(30,13, 'VIP + Reservado + Hotel' ,'digital','2016-06-06',NULL),
+      (31,13, 'Estandar + Parking' ,'digital','2018-08-16','30 dias'),(32,13, 'VIP + reservado' ,'digital','2017-09-12',NULL),
+      (33,13, 'VIP + reservado' ,'fisico','2019-12-21',NULL),(34,13, 'VIP + Reservado + Hotel' ,'digital','2016-09-15',NULL),
+      (35,13, 'Estandar' ,'digital','2017-10-13','30 dias'),(36,13, 'Estandar + Parking' ,'fisico','2019-11-23','30 dias'),
+      (37,13, 'Estandar + Parking' ,'fisico','2015-07-14','30 dias'),(38,13, 'VIP' ,'digital','2018-12-17',NULL),
+      (39,13, 'VIP + Reservado + Hotel' ,'fisico','2018-11-13',NULL),(40,15, 'Estandar' ,'digital','2015-07-14','30 dias'),
+      ~~~ 
+      
+ 21. Tabla `categoria_entrada`
+      ~~~
+      insert into categoria_entrada values ('VIP', 110),('Estandar', 60),('VIP + reservado', 160),('Estandar + Parking', 85),
+      ('VIP + Reservado + Hotel', 230)
+      ~~~
+      
+ 22. Tabla `seguridad_escenario`
+      ~~~
+      insert into seguridad_escenario values (01, 01,3),(02, 01,4),(16, 02,5),(01, 01,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 03,3),
+      (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 06,7),
+      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4),
+      ~~~ 
+      
+ 23. Tabla `seguridad_backstage`
+      ~~~
+      insert into seguridad_backstage values (01, 01,3),(02, 01,4),(16, 02,5),(01, 01,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 03,3),
+      (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 06,7),
+      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4),
+      ~~~ 
+      
+ 24. Tabla `catering_backstage`
+      ~~~
+      insert into catering_backstage values (12, 01,'asiatica'),(08, 01,'italiana'),(12, 01,'Mediterranea'),(09, 02,'India'),
+      (20, 02,'asiatica e India'),(12, 02,'italiana'),(08, 03,'asiatica'),(09, 04,'asiatica e italiana'),(12, 04,'asiatica'),
+      (20, 05,'Mediterranea'),(08, 05,'India'),(09, 05,'asiatica'),(12, 06,'asiatica e India'),(09, 06,'Italiana'),(20, 06,'asiatica'),
+      (12, 07,'asiatica'),(09, 07,'Mediterranea'),(08, 07,'italiana'),(12, 09,'asiatica'),(09, 09,'india'),
+      ~~~
+      
+ 25. Tabla `iluminacion_escenario`
+      ~~~
+      insert into iluminacion_escenario values (12, 01,'asiatica'),(08, 01,'italiana'),(12, 01,'Mediterranea'),(09, 02,'India'),
+      (20, 02,'asiatica e India'),(12, 02,'italiana'),(08, 03,'asiatica'),(09, 04,'asiatica e italiana'),(12, 04,'asiatica'),
+      (20, 05,'Mediterranea'),(08, 05,'India'),(09, 05,'asiatica'),(12, 06,'asiatica e India'),(09, 06,'Italiana'),(20, 06,'asiatica'),
+      (12, 07,'asiatica'),(09, 07,'Mediterranea'),(08, 07,'italiana'),(12, 09,'asiatica'),(09, 09,'india'),
+      ~~~      
