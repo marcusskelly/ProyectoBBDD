@@ -337,8 +337,27 @@
       
  25. Tabla `iluminacion_escenario`
       ~~~
-      insert into iluminacion_escenario values (12, 01,'asiatica'),(08, 01,'italiana'),(12, 01,'Mediterranea'),(09, 02,'India'),
-      (20, 02,'asiatica e India'),(12, 02,'italiana'),(08, 03,'asiatica'),(09, 04,'asiatica e italiana'),(12, 04,'asiatica'),
-      (20, 05,'Mediterranea'),(08, 05,'India'),(09, 05,'asiatica'),(12, 06,'asiatica e India'),(09, 06,'Italiana'),(20, 06,'asiatica'),
-      (12, 07,'asiatica'),(09, 07,'Mediterranea'),(08, 07,'italiana'),(12, 09,'asiatica'),(09, 09,'india'),
+      insert into iluminacion_escenario values (03, 01,4,'Fondo y frente'),(04, 01,6,'Fondo'),(07, 02,5,'Fondo'),(19, 02,5,'Frente'),
+      (13, 02,7,'Suelo'),(13, 03,5,'Suelo'),(03, 03,7,'Frente'),(07, 03,3,'Techo'),(07, 04,3,'Fondo Y techo'),(19, 04,12,'Frente'),
+      (04, 04,2,'Fondo'),(07, 05,4,'Fondo'),(07, 05,7,'Techo'),(03, 05,4,'Frente Y techo'),(13, 06,5,'Frente'),(07, 06,6,'Fondo'),
+      (19, 06,5,'techo'),(07, 07,4,'Fondo'),(03, 07,13,'Fondo, frente y techo'),(04, 07,5,'Fondo'),(07, 08,4,'Fondo y frente'),
+      (19, 08,5,'Fondo y techo'),(04, 08,5,'techo y suelo'),(07, 09,8,'Fondo'),(04, 09,5,'Fondo y suelo'),
       ~~~      
+
+26. Tabla `grabacion_escenario`
+      ~~~
+      insert into grabacion_escenario values (19, 01,4,'Fondo y tarima'),(06, 01,6,'Fondo'),(11, 01,4,'Fondo'),(17, 01,5,'Frente'),
+      (13, 02,7,'Tarima'),(11, 02,3,'Fondo'),(17, 02,4,'Fondo'),(17, 03,3,'Tarima'),(13, 03,6,'Fondo Y tarima'),(19, 04,12,'Frente'),
+      (06, 04,2,'Fondo'),(11, 05,4,'Fondo'),(17, 05,7,'Techo'),(06, 05,4,'Frente Y techo'),(19, 06,5,'Frente'),(13, 06,6,'Fondo'),
+      (11, 06,5,'techo'),(11, 07,4,'Fondo'),(06, 07,13,'Fondo, frente y tarima'),(17, 07,5,'Fondo'),(19, 08,4,'Fondo y frente'),
+      (11, 08,5,'Fondo y techo'),(17, 08,5,'tarima y frente'),(13, 09,8,'Fondo'),(17, 09,5,'Fondo y tarima'),
+      ~~~ 
+ 
+27. Tabla `sonido_escenario`
+      ~~~
+      insert into sonido_escenario values (19, 01,4,'Fondo y tarima'),(14, 01,6,'Fondo'),(13, 01,4,'Fondo'),(05, 01,5,'Frente'),
+      (06, 02,7,'Tarima'),(19, 02,3,'Fondo'),(14, 02,4,'Fondo'),(14, 03,3,'Tarima'),(13, 03,6,'Fondo Y tarima'),(19, 04,12,'Frente'),
+      (06, 04,2,'Fondo'),(14, 05,4,'Fondo'),(19, 05,7,'Techo'),(06, 05,4,'Frente Y techo'),(19, 06,5,'Frente'),(13, 06,6,'Fondo'),
+      (05, 06,5,'techo'),(14, 07,4,'Fondo'),(05, 07,13,'Fondo, frente y tarima'),(06, 07,5,'Fondo'),(19, 08,4,'Fondo y frente'),
+      (05, 08,5,'Fondo y techo'),(14, 08,5,'tarima y frente'),(13, 09,8,'Fondo'),(19, 09,5,'Fondo y tarima'),
+      ~~~  
