@@ -73,17 +73,17 @@
     ~~~
    insert into empresa values (01, 915737695, 646754062, 'Calle Fuencarral 32','Calle Mercedes 48', 'Pablo Alfaro', 'Seguritas Stages',   'mediana'),
    (02, 913745695, 623754672, 'Calle MasPalomas 108',NULL, 'Alfonso Oracio', 'Safe N Sound', 'pequeña'),
-   (03, 965438735, NULL , 'Calle Malvarosa 45',NULL, 'Matias Sanchez', 'Light Power', 'mediana'),
+   (03, 965438735, 611234590 , 'Calle Malvarosa 45',NULL, 'Matias Sanchez', 'Light Power', 'mediana'),
    (04, 918433091, 688744163, 'Calle Marroquina 192','Calle Antonio Casero 18', 'Michael Doherty', 'Gazprom', 'multinacional'),
    (05, 939732835, 617054032, 'Calle Puerta Bonita 4',NULL, 'Francisco Torres', 'Sound Beats', 'mediana'),
    (06, 914767085, 652784061, 'Calle Sierra Carbonera 51','Calle del Alguacil 12', 'Mateo Arias', 'Play Records', 'multinacional'),
-   (07, 914235135, NULL, 'Poligono Industrial Las Mercedes,NULL, 'Pablo Sarabia', 'Nostra luz', 'mediana'),
-   (08, 913777312, 616734182, 'Calle Uceda 10',Poligono Industrial Las Nieves, 'Ricardo Perez', 'Just Eat', 'multinacional'),
+   (07, 914235135, 777895533, 'Poligono Industrial Las Mercedes',NULL, 'Pablo Sarabia', 'Nostra luz', 'mediana'),
+   (08, 913777312, 616734182, 'Calle Uceda 10','Poligono Industrial Las Nieves', 'Ricardo Perez', 'Just Eat', 'multinacional'),
    (09, 912417094, 641757012, 'Calle Ramon Perez de Ayala 102',NULL, 'Pablo Aguilar', 'Uber Eats', 'multinacional'),
    (10, 921747095, 691754752, 'Calle de La Marroquina 15','Calle Almonacid 19', 'Pedro Blanco', 'Securitas Direct', 'mediana'),
    (11, 913757215, 626754701, 'Parque de la Fuente del Berro',NULL, 'Lorenzo Mila', 'TVE', 'multinacional'),
-   (12, 955017655, NULL, 'Calle Puerto de Canfranc 12',NULL, 'Alfredo Sanchez', 'Glovo', 'multinacional'),
-   (13, 913706335, 656785401, 'Poligono Industrial de Getafe','Calle Mateo Lopez 16', 'Joaquin Perez', 'M1 Studios', 'Multinacional'),
+   (12, 955017655, 778956134, 'Calle Puerto de Canfranc 12',NULL, 'Alfredo Sanchez', 'Glovo', 'multinacional'),
+   (13, 913706335, 656785401, 'Poligono Industrial de Getafe','Calle Mateo Lopez 16', 'Joaquin Perez', 'M1 Studios', 'multinacional'),
    (14, 935706605, 626724364, 'Calle Isco 56','Poligono Industrial de Alicante', 'Adolfo Sanchez', 'Mk The Plug', 'mediana'),
    (15, 913577895, 616753051, 'Calle Francisco de Vitoria 11',NULL, 'David Garcia', 'Web 4 you', 'multinacional'),
    (16, 913727194, 690675302, 'Calle Ronda de Segovia 1','Calle Matias Prat 48', 'Rodrigo Alvarez', 'World web', 'mediana'),
@@ -104,12 +104,12 @@
    
  8. Tabla `seguridad`
       ~~~
-      insert into seguridad values (01, 'Facebook', 'Twitter', 'Server.net','SeguritasStages.com'),
-      (02, 'Facebook y Twitter', 'Instagram', 'Server.net','SafeNSound.co.uk'),
-      (16, 'Facebook e Instagram', NULL, 'Servidores.net','WorldWeb.com'),
-      (14, 'Facebook Twitter e Instagram', 'Telegram', 'Apache.net','MKThePlug.co.uk'),
-      (13, 'Instagram y Twitter', NULL, 'Apache.net','M1OnTheBeat.com'),
-      (10, 'Instagram y Twitter', 'Facebook', 'Server.net','SecuritasDirect.es');
+      insert into seguridad values (01),
+      (02),
+      (16),
+      (14),
+      (13),
+      (10);
       ~~~
       
       
@@ -150,21 +150,21 @@
 14. Tabla `retransmision`
    
        ~~~
-      insert into retransmision values (01, 02, 01, '60 minutos', 2800 ,'directo'),(01, 01, 02, '54 minutos', 1400 ,'diferido'),
-      (01, 03, 01, '120 minutos', 700 ,'directo'),(01, 14, 01, '45 minutos', 430 ,'directo'),(01, 15, 01, '110 minutos', 920 ,'diferido),
-      (02, 05, 01, '30 minutos', 650 ,'diferido'),(02, 11, 01, '66 minutos', 850 ,'directo'),(02, 13, 01, '55 minutos', 460 ,'diferido'),
-      (02, 13, 02, '60 minutos', 310 ,'directo'),(03, 12, 02, '140 minutos', 1200 ,'directo'),(03, 12, 01, '87 minutos', 800 ,'directo'),
-      (03, 12, 03, '110 minutos', 1400 ,'diferido'),(03, 12, 07, '55 minutos', 620 ,'directo'),(03, 16, 06, '120 minutos', 610 ,'directo'),
-      (03, 17, 02, '90 minutos', 1180 ,'diferido'),(03, 18, 02, '112 minutos', 680 ,'directo'),(03, 10, 03, '68 minutos', 480 ,'directo'),
-      (03, 12, 02, '140 minutos', 1200 ,'directo'),(04, 19, 01, '166 minutos', 2300 ,'directo'),(05, 13, 07, '78 minutos', 560 ,'diferido'),
-      (05, 13, 08, '112 minutos', 670 ,'diferido'),(05, 07, 02, '102 minutos', 1350 ,'directo'),(05, 07, 02, '102 minutos', 590 ,'directo'),
-      (06, 09, 01, '108 minutos', 340 ,'diferido'),(06, 03, 01, '65 minutos', 210 ,'directo'),(06, 04, 01, '88 minutos', 460 ,'diferido'),
-      (07, 01, 02, '132 minutos', 3200 ,'directo'),(07, 15, 01, '112 minutos', 2300 ,'directo'),(07, 14, 01, '118 minutos', 2200 ,'directo'),
-      (07, 02, 01, '155 minutos', 4300 ,'directo'),(07, 15, 01, '146 minutos', 3150 ,'directo'),(07, 18, 02, '112 minutos', 6200 ,'directo'),
-      (07, 08, 02, '156 minutos', 3800 ,'directo'),(07, 05, 01, '180 minutos', 2950 ,'directo'),(07, 10, 03, '130 minutos', 8100 ,'directo'),
-      (07, 17, 05, '114 minutos', 5400 ,'directo'),(08, 01, 04, '132 minutos', 4350 ,'diferido'),(08, 01, 06, '118 minutos', 1700 ,'diferido'),
-      (08, 01, 07, '134minutos', 3100 ,'diferido'),(08, 01, 03, '148 minutos', 3240 ,'diferido'),(08, 01, 05, '112minutos', 2300 ,'diferido'),
-      (08, 01, 08, '128 minutos', 800 ,'diferido'),(08, 01, 02, '123 minutos', 1600 ,'diferido');
+      insert into retransmision values (01, 02, 01, '60 minutos', 2800 ,'directo',11),(02, 01, 02, '54 minutos', 1400 ,'diferido',17),
+      (03, 03, 01, '120 minutos', 700 ,'directo',14),(04, 14, 01, '45 minutos', 430 ,'directo',11),(05, 15, 01, '110 minutos', 920 ,'diferido',17),
+      (06, 05, 01, '30 minutos', 650 ,'diferido',14),(07, 11, 01, '66 minutos', 850 ,'directo',13),(08, 13, 01, '55 minutos', 460 ,'diferido',13),
+      (09, 13, 02, '60 minutos', 310 ,'directo',11),(10, 12, 02, '140 minutos', 1200 ,'directo',11),(11, 12, 01, '87 minutos', 800 ,'directo',11),
+      (12, 12, 03, '110 minutos', 1400 ,'diferido',14),(13, 12, 07, '55 minutos', 620 ,'directo',13),(14, 16, 06, '120 minutos', 610 ,'directo',17),
+      (15, 17, 02, '90 minutos', 1180 ,'diferido',19),(16, 18, 02, '112 minutos', 680 ,'directo',19),(17, 10, 03, '68 minutos', 480 ,'directo',11),
+      (18, 12, 02, '140 minutos', 1200 ,'directo',14),(19, 19, 01, '166 minutos', 2300 ,'directo',17),(20, 13, 07, '78 minutos', 560 ,'diferido',13),
+      (21, 13, 08, '112 minutos', 670 ,'diferido',17),(22, 07, 02, '102 minutos', 1350 ,'directo',19),(23, 07, 02, '102 minutos', 590 ,'directo',11),
+      (24, 09, 01, '108 minutos', 340 ,'diferido',14),(25, 03, 01, '65 minutos', 210 ,'directo',13),(26, 04, 01, '88 minutos', 460 ,'diferido',19),
+      (27, 01, 02, '132 minutos', 3200 ,'directo',13),(28, 15, 01, '112 minutos', 2300 ,'directo',19),(29, 14, 01, '118 minutos', 2200 ,'directo',11),
+      (30, 02, 01, '155 minutos', 4300 ,'directo',14),(31, 15, 01, '146 minutos', 3150 ,'directo',13),(32, 18, 02, '112 minutos', 6200 ,'directo',17),
+      (33, 08, 02, '156 minutos', 3800 ,'directo',19),(34, 05, 01, '180 minutos', 2950 ,'directo',11),(35, 10, 03, '130 minutos', 8100 ,'directo',14),
+      (36, 17, 05, '114 minutos', 5400 ,'directo',11),(37, 01, 04, '132 minutos', 4350 ,'diferido',13),(38, 01, 06, '118 minutos', 1700 ,'diferido',19),
+      (39, 01, 07, '134minutos', 3100 ,'diferido',17),(40, 01, 03, '148 minutos', 3240 ,'diferido',13),(41, 01, 05, '112 minutos', 2300 ,'diferido',14),
+      (42, 01, 08, '128 minutos', 800 ,'diferido',11),(43, 01, 02, '123 minutos', 1600 ,'diferido',19);
       ~~~
       
 15. Tabla `merchandising`
@@ -184,16 +184,16 @@
       (48, 'camiseta', 'alta', 32,'XL',19),(49, 'camiseta', 'media', 20,'S',23),(50, 'camiseta', 'media', 20,'M',23),(51, 'camiseta', 'media', 20,'L',23),
       (52, 'camiseta', 'alta', 32,'S',22),(53, 'camiseta', 'alta', 32,'M',22),(54, 'camiseta', 'alta', 32,'L',22),(55, 'camiseta', 'media', 20,'S',36),
       (56, 'camiseta', 'media', 20,'M',36),(57, 'camiseta', 'media', 20,'L',36),(58, 'gorra', 'media', 14,'S',33),(59, 'gorra', 'media', 14,'M',33),
-      (60, 'gorra', 'media', 14,'L',33),(61, 'gorra', 'baja', 8,'S',12),(62, 'gorra', 'baja', 8,'M',12),(63, 'gorra', 'baja', 8,'L',12),(02, 'gorra', 'baja', 8,'XL',12),
-      (64, 'gorra', 'baja', 8,'S',17),(65, 'gorra', 'baja', 8,'M',17),(66, 'gorra', 'baja', 8,'L',17),(67, 'gorra', 'baja', 8,'XL',17),(02, 'gorra', 'alta', 21,'S',30),
-      (68, 'gorra', 'alta', 21,'M',30),(69, 'gorra', 'alta', 21,'XL',30),(70, 'gorra', 'alta', 21,'L',30),(71, 'gorra', 'alta', 21,'S',18),(02, 'gorra', 'alta', 21,'M',18),
-      (72, 'gorra', 'alta', 21,'L',18),(73, 'gorra', 'baja', 8,'S',05),(74, 'gorra', 'baja', 8,'M',05),(75, 'gorra', 'baja', 8,'L',05),(02, 'gorra', 'baja', 8,'XL',05),
-      (76, 'gorra', 'baja', 8,'S',09),(77, 'gorra', 'baja', 8,'M',09),(78, 'gorra', 'baja', 8,'L',09),(79, 'gorra', 'baja', 8,'XL',09),(02, 'gorra', 'alta', 21,'XL',09),
-      (80, 'gorra', 'alta', 21,'S',09),(81, 'gorra', 'alta', 21,'M',09),(82, 'gorra', 'alta', 21,'L',09),(83, 'gorra', 'media', 14,'XL',09),(02, 'gorra', 'media', 14,'L',09),
-      (84, 'gorra', 'media', 14,'S',09),(85, 'gorra', 'media', 14,'M',09),(86, 'gorra', 'media', 14,'L',14),(87, 'gorra', 'media', 14,'M',14),(02, 'gorra', 'media', 14,'S',14),
-      (88, 'gorra', 'alta', 21,'L',14),(89, 'gorra', 'alta', 21,'M',14),(90, 'gorra', 'alta', 21,'S',14),(91, 'gorra', 'alta', 21,'XL',14),(02, 'gorra', 'alta', 21,'L',34),
+      (60, 'gorra', 'media', 14,'L',33),(61, 'gorra', 'baja', 8,'S',12),(62, 'gorra', 'baja', 8,'M',12),(63, 'gorra', 'baja', 8,'L',12),(230, 'gorra', 'baja', 8,'XL',12),
+      (64, 'gorra', 'baja', 8,'S',17),(65, 'gorra', 'baja', 8,'M',17),(66, 'gorra', 'baja', 8,'L',17),(67, 'gorra', 'baja', 8,'XL',17),(560, 'gorra', 'alta', 21,'S',30),
+      (68, 'gorra', 'alta', 21,'M',30),(69, 'gorra', 'alta', 21,'XL',30),(70, 'gorra', 'alta', 21,'L',30),(71, 'gorra', 'alta', 21,'S',18),(670, 'gorra', 'alta', 21,'M',18),
+      (72, 'gorra', 'alta', 21,'L',18),(73, 'gorra', 'baja', 8,'S',05),(74, 'gorra', 'baja', 8,'M',05),(75, 'gorra', 'baja', 8,'L',05),(890, 'gorra', 'baja', 8,'XL',05),
+      (76, 'gorra', 'baja', 8,'S',09),(77, 'gorra', 'baja', 8,'M',09),(78, 'gorra', 'baja', 8,'L',09),(79, 'gorra', 'baja', 8,'XL',09),(999, 'gorra', 'alta', 21,'XL',09),
+      (80, 'gorra', 'alta', 21,'S',09),(81, 'gorra', 'alta', 21,'M',09),(82, 'gorra', 'alta', 21,'L',09),(83, 'gorra', 'media', 14,'XL',09),(456, 'gorra', 'media', 14,'L',09),
+      (84, 'gorra', 'media', 14,'S',09),(85, 'gorra', 'media', 14,'M',09),(86, 'gorra', 'media', 14,'L',14),(87, 'gorra', 'media', 14,'M',14),(678, 'gorra', 'media', 14,'S',14),
+      (88, 'gorra', 'alta', 21,'L',14),(89, 'gorra', 'alta', 21,'M',14),(90, 'gorra', 'alta', 21,'S',14),(91, 'gorra', 'alta', 21,'XL',14),(910, 'gorra', 'alta', 21,'L',34),
       (92, 'gorra', 'alta', 21,'S',34),(93, 'gorra', 'alta', 21,'M',34),(94, 'gorra', 'baja', 8,'L',02),(95, 'gorra', 'baja', 8,'S',02),(96, 'gorra', 'baja', 8,'M',02),
-      (97, 'gorra', 'baja', 8,'XL',02),(98, 'gorra', 'alta', 21,'M',02),(99, 'gorra', 'baja', 8,'S',03),(100, 'gorra', 'baja', 8,'M',03),(02, 'gorra', 'baja', 8,'L',03),
+      (97, 'gorra', 'baja', 8,'XL',02),(98, 'gorra', 'alta', 21,'M',02),(99, 'gorra', 'baja', 8,'S',03),(100, 'gorra', 'baja', 8,'M',03),(653, 'gorra', 'baja', 8,'L',03),
       (101, 'gorra', 'media', 14,'S',03),(102, 'gorra', 'media', 14,'M',03),(103, 'gorra', 'media', 14,'XL',03),(104, 'sudadera', 'media', 44,'S',03),
       (105, 'sudadera', 'media', 44,'M',03),(106, 'sudadera', 'alta', 62,'S',03),(107, 'sudadera', 'baja', 32,'S',14),(108, 'sudadera', 'baja', 32,'M',14),
       (109, 'sudadera', 'baja', 32,'L',14),(110, 'sudadera', 'baja', 32,'XL',14),(111, 'sudadera', 'baja', 32,'S',19),(112, 'sudadera', 'baja', 32,'M',19),
@@ -205,12 +205,12 @@
       (133, 'sudadera', 'baja', 32,'M',31),(134, 'sudadera', 'baja', 32,'L',31),(135, 'sudadera', 'baja', 32,'XL',31),(136, 'sudadera', 'media', 44,'S',31),
       (137, 'sudadera', 'media', 44,'M',31),(138, 'sudadera', 'media', 44,'L',31),(139, 'sudadera', 'alta', 62,'S',31),(140, 'sudadera', 'alta', 62,'M',31),
       (141, 'sudadera', 'alta', 62,'L',31),(142, 'sudadera', 'alta', 62,'XL',31),(143, 'llavero', NULL, 6,NULL,31),(144, 'llavero', NULL, 6,NULL,32),
-      (145, 'llavero', NULL, 6,NULL,08),(146, 'llavero', NULL, 6,NULL,09),(147, 'llavero', NULL, 6,NULL,12),(148, 'llavero', NULL, 6,NULL,16),(04, 'llavero', NULL, 6,NULL,32),
-      (149, 'llavero', NULL, 6,NULL,29),(150, 'llavero', NULL, 6,NULL,25),(151, 'llavero', NULL, 6,NULL,28),(152, 'llavero', NULL, 6,NULL,36),(04, 'llavero', NULL, 6,NULL,34),
-      (153, 'llavero', NULL, 6,NULL,02),(154, 'llavero', NULL, 6,NULL,01),(155, 'llavero', NULL, 6,NULL,31),(156, 'llavero', NULL, 6,NULL,26),(04, 'llavero', NULL, 6,NULL,25),
-      (157, 'llavero', NULL, 6,NULL,24),(158, 'llavero', NULL, 6,NULL,22),(159, 'llavero', NULL, 6,NULL,20),(160, 'llavero', NULL, 6,NULL,03),(04, 'llavero', NULL, 6,NULL,23),
-      (161, 'disco', NULL, 12,NULL,31),(162, 'disco', NULL, 12,NULL,28),(163, 'disco', NULL, 12,NULL,26),(164, 'disco', NULL, 12,NULL,33),(05, 'disco', NULL, 12,NULL,30),
-      (165, 'disco', NULL, 12,NULL,21),(166, 'disco', NULL, 12,NULL,14),(167, 'disco', NULL, 12,NULL,12),(168, 'disco', NULL, 12,NULL,10),(05, 'disco', NULL, 12,NULL,08),
+      (145, 'llavero', NULL, 6,NULL,08),(146, 'llavero', NULL, 6,NULL,09),(147, 'llavero', NULL, 6,NULL,12),(148, 'llavero', NULL, 6,NULL,16),(831, 'llavero', NULL, 6,NULL,32),
+      (149, 'llavero', NULL, 6,NULL,29),(150, 'llavero', NULL, 6,NULL,25),(151, 'llavero', NULL, 6,NULL,28),(152, 'llavero', NULL, 6,NULL,36),(973, 'llavero', NULL, 6,NULL,34),
+      (153, 'llavero', NULL, 6,NULL,02),(154, 'llavero', NULL, 6,NULL,01),(155, 'llavero', NULL, 6,NULL,31),(156, 'llavero', NULL, 6,NULL,26),(851, 'llavero', NULL, 6,NULL,25),
+      (157, 'llavero', NULL, 6,NULL,24),(158, 'llavero', NULL, 6,NULL,22),(159, 'llavero', NULL, 6,NULL,20),(160, 'llavero', NULL, 6,NULL,03),(940, 'llavero', NULL, 6,NULL,23),
+      (161, 'disco', NULL, 12,NULL,31),(162, 'disco', NULL, 12,NULL,28),(163, 'disco', NULL, 12,NULL,26),(164, 'disco', NULL, 12,NULL,33),(870, 'disco', NULL, 12,NULL,30),
+      (165, 'disco', NULL, 12,NULL,21),(166, 'disco', NULL, 12,NULL,14),(167, 'disco', NULL, 12,NULL,12),(168, 'disco', NULL, 12,NULL,10),(966, 'disco', NULL, 12,NULL,08),
       (169, 'disco', NULL, 12,NULL,02),(170, 'disco', NULL, 12,NULL,07),(171, 'disco', NULL, 12,NULL,11),(172, 'disco', NULL, 12,NULL,29),(173, 'disco', NULL, 12,NULL,35);
       ~~~      
       
@@ -218,11 +218,22 @@
  16. Tabla `patrocinador`
    
        ~~~
-      insert into patrocinador values (01,915737695,646754062, 'Alimentacion', 'Calle Alcala de Guadaira 11' ,'Alsea'),(02,925757690,643750062, 'Alimentacion', 'Calle Alcala de       Henares 11' ,'Doritos'),(03,915336605,646054360, 'Alimentacion', 'Calle Montreal 15' ,'Pepsi-Cola'),(04,924730685,636757062, 'Hosteleria', 'Calle Francisco Jimenez 12'          ,'Bar Manolo'),(05,935730645,621734062, 'Suministros', 'Poligono Industrial de San Fernando' ,'Amazon'),(06,912407795,643444002, 'Alimentacion', 'Calle Barras bravas            10' ,'Lays'),(07,917747195,636750012, 'Reposteria', 'Calle Doña Asuncion 23' ,'Carrefour'),(07,918757095,600751032, 'Deportes', 'Calle Alcala 45' ,'Nike'),
-      (08,912730625,626359061, 'Deportes', 'Calle San Rafael 23' ,'Adidas'),(09,935537605,640750462, 'Reposteria', 'Calle Los Santos 10' ,'Arla'),
-      (10,915017095,626004062, 'Alimentacion', 'Calle de Los Buitres 14' ,'Alcampo'),(11,915430615,616750012, 'Alimentacion', 'Calle San Ramon 11' ,'Dia'),
-      (12,912738691,613650012, 'Deportes', 'Calle Paseo de la Victoria' ,'Asics'),(13,915430415,641054022, 'Tecnologia', 'Calle Las Magras 2' ,'Google'),
-      (14,916730215,626054102, 'Tecnologia', 'Calle San Vicente 17' ,'Facebook'),(15,914227600,623751002, 'Tecnologia', 'Calle Vladimir 50' ,'Twitter');
+      insert into patrocinador values (01,915737695,646754062, 'Alimentacion', 'Calle Alcala de Guadaira 11','Alsea'),
+      (02,925757690,643750062, 'Alimentacion', 'Calle Alcala de Henares 11' ,'Doritos'),
+      (03,915336605,646054360, 'Alimentacion', 'Calle Montreal 15' ,'Pepsi-Cola'),
+      (04,924730685,636757062, 'Hosteleria', 'Calle Francisco Jimenez 12','Bar Manolo'),
+      (05,935730645,621734062, 'Suministros', 'Poligono Industrial de Jorge' ,'Amazon'),
+      (06,912407795,643444002, 'Alimentacion', 'Calle Barras bravas 10' ,'Lays'),
+      (07,917747195,636750012, 'Reposteria', 'Calle Asuncion 23' ,'Carrefour'),
+      (18,918757095,600751032, 'Deportes', 'Calle Alcala 45' ,'Nike'),
+      (08,912730625,626359061, 'Deportes', 'Calle San Rafael 23' ,'Adidas'),
+      (09,935537605,640750462, 'Reposteria', 'Calle Los Santos 10' ,'Arla'),
+      (10,915017095,626004062, 'Alimentacion', 'Calle Los Buitres 14' ,'Alcampo'),
+      (11,915430615,616750012, 'Alimentacion', 'Calle San Ramon 11' ,'Dia'),
+      (12,912738691,613650012, 'Deportes', 'Calle la Victoria' ,'Asics'),
+      (13,915430415,641054022, 'Tecnologia', 'Calle Las Magras 2' ,'Google'),
+      (14,916730215,626054102, 'Tecnologia', 'Calle San Vicente 17' ,'Facebook'),
+      (15,914227600,623751002, 'Tecnologia', 'Calle Vladimir 50' ,'Twitter');
       ~~~     
 
 17. Tabla `artista_escenario`
@@ -233,9 +244,9 @@
       (05,06,'1 hora y 23 minutos'),(06,03,'1 hora y 14 minutos'),(06,04,'1 hora y 13 minutos'),(06,01,'32 minutos'),
       (07,03,'1 hora y 12 minutos'),(08,01,'34 minutos'),(09,01,'1 hora y 11 minutos'),(09,05,'2 horas y 10 minutos'),
       (10,02,'1 hora y 56 minutos'),(11,09,'1 hora y 32 minutos'),(11,02,'26 minutos'),(11,01,'1 hora y 14 minutos'),
-      (12,04,'58 minutos'),(12,01,'2 horas y 15 minutos'),(13,08,'1 hora y 40 minutos'),(14,03,'34 minutos'),
+      (12,04,'58 minutos'),(12,01,'2 horas y 15 minutos'),(14,08,'1 hora y 40 minutos'),(14,03,'34 minutos'),
       (15,05,'1 hora y 48 minutos'),(15,06,'1 hora y 24 minutos'),(16,03,'54 minutos'),(17,07,'1 hora y 56 minutos'),
-      (18,03,'1 hora y 35 minutos'),(19,01,'45 minutos'),(20,04,'1 hora y 12 minutos'),(20,04,'1 hora y 30 minutos'),
+      (18,03,'1 hora y 35 minutos'),(19,01,'45 minutos'),(28,04,'1 hora y 12 minutos'),(20,04,'1 hora y 30 minutos'),
       (21,03,'36 minutos'),(22,04,'1 hora y 40 minutos'),(22,07,'1 hora y 50 minutos'),(22,05,'45 minutos'),
       (23,04,'1 hora y 34 minutos'),(23,01,'2 horas y 15 minutos'),(24,08,'1 hora y 23 minutos'),(24,01,'1 hora y 14 minutos'),
       (25,01,'1 hora y 33 minutos'),(26,05,'1 hora y 30 minutos'),(27,07,'1 hora y 15 minutos'),(28,02,'1 hora y 54 minutos'),
@@ -252,7 +263,7 @@
       (06, 15, 'indefinido', 'indefinido',13000),(07, 10, 'temporal', '15 meses',8000),(07, 06, 'temporal', '12 meses',3800),
       (07, 13, 'temporal', '23 meses',6700),(08, 14, 'indefinido', 'indefinido',5700),(09, 09, 'temporal', '14 meses',8900),
       (10, 06, 'indefinido', 'indefinido',6500),(11, 08, 'temporal', '13 meses',6550),(12, 12, 'indefinido', 'indefinido',9000),
-      (12, 15, 'temporal', '4 meses',12000),(13, 09, 'indefinido', 'indefinido',3400),(14, 01, 'temporal', '7 meses',4100),
+      (12, 15, 'temporal', '4 meses',12000),(12, 09, 'indefinido', 'indefinido',3400),(14, 01, 'temporal', '7 meses',4100),
       (14, 05, 'temporal', '12 meses',3200),(15, 06, 'temporal', '22 meses',8900),(16, 04, 'temporal', '9 meses',4800),
       (17, 03, 'temporal', '21 meses',8700),(20, 07, 'temporal', '18 meses',9900),(20, 05, 'temporal', '5 meses',4700),
       (20, 08, 'temporal', '14 meses',5200),(20, 02, 'indefinido', 'indefinido',10800),(21, 07, 'temporal', '13 meses',7600),
@@ -266,15 +277,15 @@
       
  19. Tabla `cartel_empresa`
       ~~~
-      insert into cartel_empresa values (01, 03, 12 ,4500),(01, 19, 7 ,5200),(01, 20, 4 ,4100),(01, 01, 18 ,3200),(01, 19, 3 ,2300),
+      insert into cartel_empresa values (01, 03, 12 ,4500),(03, 19, 7 ,5200),(01, 20, 4 ,4100),(01, 01, 18 ,3200),(01, 19, 3 ,2300),
       (01, 06, 16 ,5600),(01, 08, 14 ,2800),(01, 13, 7 ,7200),(02, 01, 14 ,4700),(02, 19, 14 ,6200),(02, 09, 7 ,2300),
       (02, 17, 21 ,12000),(02, 18, 6 ,5100),(03, 14, 3 ,6500),(03, 06, 12 ,7100),(03, 11, 13 ,6800),(03, 10, 8 ,1090),
       (04, 15, 5 ,6800),(04, 02, 9 ,4900),(04, 12, 18 ,9400),(04, 17, 8 ,6400),(04, 18, 22 ,2300),(04, 05, 7 ,4500),
       (05, 10, 13 ,12000),(05, 13, 5 ,5300),(05, 11, 7 ,6300),(05, 17, 6 ,2300),(05, 09, 11 ,4580),(05, 05, 9 ,5600),
-      (06, 14, 5 ,2400),(06, 02, 14 ,8100),(06, 08, 8,4300),(06, 17, 8 ,8100),(06, 14, 9 ,3200),(07, 01, 24 ,9700),
-      (07, 16, 5 ,4500),(07, 12, 12 ,6500),(07, 06, 6 ,6400),(07, 04, 8 ,7100),(07, 06, 7 ,7600),(08, 13, 7 ,8700),
+      (06, 19, 5 ,2400),(06, 02, 14 ,8100),(06, 08, 8,4300),(06, 17, 8 ,8100),(06, 14, 9 ,3200),(07, 01, 24 ,9700),
+      (07, 16, 5 ,4500),(07, 12, 12 ,6500),(07, 06, 6 ,6400),(07, 04, 8 ,7100),(07, 08, 7 ,7600),(08, 13, 7 ,8700),
       (08, 02, 18 ,3100),(08, 09, 13 ,7600),(08, 12, 6 ,8500),(08, 11, 7 ,7400),(08, 18, 6 ,6300),(08, 05, 15 ,7300),
-      (09, 01, 14 ,3500),(09, 13, 4 ,12000),(09, 20, 6 ,3400),(09, 17, 8 ,2100),(09, 04, 16 ,8100),(09, 13, 9 ,8200),
+      (09, 01, 14 ,3500),(09, 13, 4 ,12000),(09, 20, 6 ,3400),(09, 17, 8 ,2100),(09, 04, 16 ,8100),(09, 16, 9 ,8200),
       (10, 02, 13 ,3200),(10, 01, 12 ,6400),(10, 16, 10 ,5100),(10, 09, 7 ,3200),(10, 04, 9 ,4500),(10, 18, 06 ,3400),
       (10, 06, 5 ,1200),(11, 02, 6 ,5100),(11, 14, 7 ,7100),(11, 08, 10 ,5200),(11, 12, 3 ,5400),(11, 06, 7 ,8700),
       (11, 13, 9 ,4300),(11, 05, 4 ,7500),(11, 07, 12 ,3200),(12, 02, 16 ,8700),(12, 13, 7 ,8700),(12, 08, 7 ,4500),
@@ -315,15 +326,15 @@
       
  22. Tabla `seguridad_escenario`
       ~~~
-      insert into seguridad_escenario values (01, 01,3),(02, 01,4),(16, 02,5),(01, 01,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 03,3),
-      (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 06,7),
-      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4);
+      insert into seguridad_escenario values (01, 01,3),(02, 01,4),(16, 03,5),(01, 09,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 07,3),
+      (14, 03,6),(10, 03,3),(02, 04,7),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 09,7),
+      (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 05,6),(02, 09,4),(14, 09,8),(10, 09,4);
       ~~~ 
       
  23. Tabla `seguridad_backstage`
       ~~~
-      insert into seguridad_backstage values (01, 01,3),(02, 01,4),(16, 02,5),(01, 01,3),(01, 02,3),(16, 02,6),(01, 03,4),(10, 03,3),
-      (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),(13, 06,7),
+      insert into seguridad_backstage values (01, 01,3),(02, 01,4),(01, 02,3),(16, 02,6),(01, 03,4),
+      (14, 03,6),(10, 03,3),(02, 04,7),(01, 05,5),(10, 05,3),(14, 05,4),(13, 05,5),(01, 06,3),(02, 06,6),(13, 06,3),
       (02, 07,8),(14, 07,5),(16, 07,6),(16, 08,5),(01, 08,3),(02, 08,4),(13, 08,6),(01, 09,6),(02, 09,4),(14, 09,8),(10, 09,4);
       ~~~ 
       
@@ -339,7 +350,7 @@
       ~~~
       insert into iluminacion_escenario values (03, 01,4,'Fondo y frente'),(04, 01,6,'Fondo'),(07, 02,5,'Fondo'),(19, 02,5,'Frente'),
       (13, 02,7,'Suelo'),(13, 03,5,'Suelo'),(03, 03,7,'Frente'),(07, 03,3,'Techo'),(07, 04,3,'Fondo Y techo'),(19, 04,12,'Frente'),
-      (04, 04,2,'Fondo'),(07, 05,4,'Fondo'),(07, 05,7,'Techo'),(03, 05,4,'Frente Y techo'),(13, 06,5,'Frente'),(07, 06,6,'Fondo'),
+      (04, 04,2,'Fondo'),(07, 05,4,'Fondo'),(03, 05,4,'Frente Y techo'),(13, 06,5,'Frente'),(07, 06,6,'Fondo'),
       (19, 06,5,'techo'),(07, 07,4,'Fondo'),(03, 07,13,'Fondo, frente y techo'),(04, 07,5,'Fondo'),(07, 08,4,'Fondo y frente'),
       (19, 08,5,'Fondo y techo'),(04, 08,5,'techo y suelo'),(07, 09,8,'Fondo'),(04, 09,5,'Fondo y suelo');
       ~~~      
@@ -364,13 +375,13 @@
 28. Tabla `cartel_artista`
       ~~~
       insert into cartel_artista values (01, 01),(01, 07),(01, 13),(02, 01),(02, 03),(02, 06),(03, 04),(03, 11),(03, 14),(03, 12),
-      (04, 01),(04, 02),(04, 03),(04, 04),(04, 05),(04, 06),(04, 07),(04, 08),(04, 09),(04, 10),(04, 11),(04, 12),(04, 13),(04, 04),
+      (04, 01),(04, 02),(04, 03),(04, 05),(04, 06),(04, 07),(04, 08),(04, 09),(04, 10),(04, 11),(04, 12),(04, 13),(04, 04),
       (05, 01),(05, 05),(05, 07),(05, 09),(06, 05),(06, 11),(07, 12),(07, 01),(08, 12),(08, 14),(09, 02),(09, 03),(09, 04),(09, 10),
-      (10, 01),(10, 10),(10, 06),(11, 02),(11, 03),(11, 05),(12, 01),(12, 03),(12, 04),(13, 10),(13, 14),(13, 09),(14, 14),(14, 13),
-      (14, 08),(15, 10),(15, 13),(15, 04),(15, 11),(16, 14),(16, 07),(16, 09),(16, 09),(17, 13),(17, 12),(17, 02),(17, 10),(17, 06),
+      (10, 01),(10, 10),(10, 06),(11, 02),(11, 03),(11, 05),(12, 01),(12, 03),(12, 04),(14, 14),(14, 13),
+      (14, 08),(15, 10),(15, 13),(15, 04),(15, 11),(16, 14),(16, 07),(16, 09),(17, 13),(17, 12),(17, 02),(17, 10),(17, 06),
       (18, 14),(18, 11),(18, 09),(18, 12),(18, 01),(19, 01),(19, 12),(19, 03),(20, 13),(20, 11),(20, 02),(20, 01),(21, 03),(21, 04),
       (21, 08),(21, 12),(22, 11),(22, 13),(22, 02),(22, 07),(23, 11),(23, 12),(23, 14),(23, 09),(23, 05),(24, 11),(24, 01),(24, 07),
-      (24, 10),(24, 08),(24, 06),(24, 04),(25, 12),(25, 10),(25, 05),(25, 13),(25, 06),(26, 14),(26, 12),(26, 14),(26, 06),(26, 09),
+      (24, 10),(24, 08),(24, 06),(24, 04),(25, 12),(25, 10),(25, 05),(25, 13),(25, 06),(26, 14),(26, 12),(26, 06),(26, 09),
       (27, 14),(27, 13),(27, 11),(27, 10),(27, 08),(28, 01),(28, 04),(28, 08),(28, 07),(29, 02),(29, 01),(29, 13),(29, 07),(30, 02),
       (30, 04),(30, 07),(30, 14),(31, 02),(31, 01),(31, 11),(31, 03),(31, 09),(32, 03),(32, 11),(33, 03),(33, 01),(33, 05),(33, 06),
       (33, 09),(33, 10),(34, 08),(34, 01),(34, 05),(34, 11),(35, 06),(35, 04),(35, 07),(35, 09),(35, 10),(35, 12),(35, 03),(36, 06);
