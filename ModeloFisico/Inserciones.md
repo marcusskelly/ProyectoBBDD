@@ -72,7 +72,7 @@
    
     ~~~
    insert into empresa values (01, 915737695, 646754062, 'Calle Fuencarral 32','Calle Mercedes 48', 'Pablo Alfaro', 'Seguritas Stages',   'mediana'),
-   (02, 913745695, 623754672, 'Calle MasPalomas 108',NULL, 'Alfonso Oracio', 'Safe N' Sound', 'pequeña'),
+   (02, 913745695, 623754672, 'Calle MasPalomas 108',NULL, 'Alfonso Oracio', 'Safe N Sound', 'pequeña'),
    (03, 965438735, NULL , 'Calle Malvarosa 45',NULL, 'Matias Sanchez', 'Light Power', 'mediana'),
    (04, 918433091, 688744163, 'Calle Marroquina 192','Calle Antonio Casero 18', 'Michael Doherty', 'Gazprom', 'multinacional'),
    (05, 939732835, 617054032, 'Calle Puerta Bonita 4',NULL, 'Francisco Torres', 'Sound Beats', 'mediana'),
@@ -81,7 +81,7 @@
    (08, 913777312, 616734182, 'Calle Uceda 10',Poligono Industrial Las Nieves, 'Ricardo Perez', 'Just Eat', 'multinacional'),
    (09, 912417094, 641757012, 'Calle Ramon Perez de Ayala 102',NULL, 'Pablo Aguilar', 'Uber Eats', 'multinacional'),
    (10, 921747095, 691754752, 'Calle de La Marroquina 15','Calle Almonacid 19', 'Pedro Blanco', 'Securitas Direct', 'mediana'),
-   (11, 913757215, 626754701, 'Parque de la Fuente del Berro',NULL, 'Lorenzo Milá', 'TVE', 'multinacional'),
+   (11, 913757215, 626754701, 'Parque de la Fuente del Berro',NULL, 'Lorenzo Mila', 'TVE', 'multinacional'),
    (12, 955017655, NULL, 'Calle Puerto de Canfranc 12',NULL, 'Alfredo Sanchez', 'Glovo', 'multinacional'),
    (13, 913706335, 656785401, 'Poligono Industrial de Getafe','Calle Mateo Lopez 16', 'Joaquin Perez', 'M1 Studios', 'Multinacional'),
    (14, 935706605, 626724364, 'Calle Isco 56','Poligono Industrial de Alicante', 'Adolfo Sanchez', 'Mk The Plug', 'mediana'),
