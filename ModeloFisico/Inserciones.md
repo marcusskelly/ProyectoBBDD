@@ -45,7 +45,7 @@
    insert into escenario values (01, 12000, 'pequeño', 'cubierto', '4000 personas' ,'Brugal Stage'),
    (02, 18000, 'medio' , 'cubierto', '8500 personas','Bacardi Stage'),
    (03, 9000, 'pequeño', 'aire libre', '5600 personas','Jack Daniels Stage'),
-   (04, 25000, 'grande', 'techo reractil', '12000 personas','Barcelo Stage'),
+   (04, 25000, 'grande', 'techo retractil', '12000 personas','Barcelo Stage'),
    (05, 32000, 'muy grande', 'aire libre', '25000 personas','Main Stage'),
    (06, 6000, 'pequeño', 'aire libre', '3200 personas','Smirnoff Stage'),
    (07, '8000', 'pequeño', 'cubierto', '6200 personas','Absolut Stage'),
